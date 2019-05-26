@@ -61,6 +61,7 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
   npm
+  web-search
 )
 
 source $ZSH/oh-my-zsh.sh
