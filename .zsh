@@ -60,6 +60,7 @@ plugins=(
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
+  npm
 )
 
 source $ZSH/oh-my-zsh.sh
