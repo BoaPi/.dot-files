@@ -21,3 +21,4 @@ alias rm=trash
 alias folder="nautilus ."
 alias c="code ."
 alias zshreload="source ~/.zshrc"
+alias codeextensions="code --list-extensions"
