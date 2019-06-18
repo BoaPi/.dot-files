@@ -2,7 +2,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "editor.minimap.enabled": false,
   "window.menuBarVisibility": "toggle",
-  "workbench.colorTheme": "Night Owl",
+  "workbench.colorTheme": "SynthWave '84",
   "window.zoomLevel": 0,
   "editor.fontLigatures": true,
   "editor.tabSize": 2,
@@ -23,6 +23,9 @@
   "[typescriptreact]": {
     "editor.formatOnSave": false
   },
+  "[vue]": {
+    "editor.formatOnSave": false
+  },
   "files.associations": {
     "*.js": "javascriptreact"
   },
@@ -36,9 +39,10 @@
   "workbench.activityBar.visible": true,
   "workbench.startupEditor": "newUntitledFile",
   "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "vue",
+    { "language": "html", "autoFix": true },
+    { "language": "javascript", "autoFix": true },
+    { "language": "javascriptreact", "autoFix": true },
+    { "language": "vue", "autoFix": true },
     { "language": "typescript", "autoFix": true },
     { "language": "typescriptreact", "autoFix": true }
   ],
@@ -66,5 +70,9 @@
     "javascriptreact",
     "typescript",
     "typescriptreact"
-  ]
+  ],
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "vue": "html"
+  }
 }
