@@ -1,3 +1,9 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/tobias.weyer/.oh-my-zsh"
+
 # theme
 ZSH_THEME="agnoster"
 
@@ -18,7 +24,9 @@ prompt_context() {}
 
 # aliases
 alias rm=trash
-alias folder="nautilus ."
+alias folder="open ."
 alias c="code ."
 alias zshreload="source ~/.zshrc"
 alias codeextensions="code --list-extensions"
+alias p="~/documents/projects"
+alias v="verdaccio"
