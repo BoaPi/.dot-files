@@ -3,9 +3,13 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/tobias.weyer/.oh-my-zsh"
+export PATH=$PATH:/usr/local/go/bin
 
 # theme
 ZSH_THEME="agnoster"
+
+# include Z, yo
+. ~/z.sh
 
 # plug-ins
 plugins=(
@@ -15,6 +19,7 @@ plugins=(
   zsh-nvm
   npm
   web-search
+  z
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -30,9 +35,14 @@ alias c="code ."
 alias zshreload="source ~/.zshrc"
 alias codeextensions="code --list-extensions"
 alias p="~/documents/projects"
-alias v="verdaccio"
-alias pull="git pull"
 alias gitAuth="ssh-add ~/.ssh/id_rsa"
+alias pull="git pull"
+alias push="git push"
+alias dev="git co develop"
+alias gs="gulp serve"
+alias auditCritical="npm audit | grep -E \"(Critical)\" -B3 -A10"
+alias auditHigh="npm audit | grep -E \"(High)\" -B3 -A10"
+alias auditCritialAndHigh="npm audit | grep -E \"(High | Critical)\" -B3 -A10"
 
 # place this after nvm initialization!
 autoload -U add-zsh-hook
@@ -53,5 +63,6 @@ load-nvmrc() {
     nvm use default
   fi
 }
+
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc

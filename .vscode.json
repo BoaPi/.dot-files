@@ -1,12 +1,12 @@
 {
   "workbench.iconTheme": "material-icon-theme",
   "editor.minimap.enabled": false,
-  "window.menuBarVisibility": "toggle",
-  "workbench.colorTheme": "SynthWave '84",
+  "workbench.colorTheme": "2077",
   "window.zoomLevel": 0,
   "editor.fontLigatures": true,
   "editor.tabSize": 2,
   "editor.fontFamily": "'Dank Mono', 'Droid Sans Mono', 'monospace', 'Droid Sans Fallback'",
+  "editor.renderWhitespace": "selection",
   "terminal.integrated.fontFamily": "'Dank Mono'",
   "terminal.integrated.fontSize": 16,
   "javascript.preferences.quoteStyle": "single",
@@ -23,7 +23,7 @@
   "[typescriptreact]": {
     "editor.formatOnSave": false
   },
-  "[vue]": {
+  "[handlebars]": {
     "editor.formatOnSave": false
   },
   "files.associations": {
@@ -39,40 +39,63 @@
   "workbench.activityBar.visible": true,
   "workbench.startupEditor": "newUntitledFile",
   "eslint.validate": [
-    { "language": "html", "autoFix": true },
-    { "language": "javascript", "autoFix": true },
-    { "language": "javascriptreact", "autoFix": true },
-    { "language": "vue", "autoFix": true },
-    { "language": "typescript", "autoFix": true },
-    { "language": "typescriptreact", "autoFix": true }
-  ],
-  "vetur.format.defaultFormatter.html": "prettyhtml",
-  "vetur.format.defaultFormatter.css": "prettier",
-  "vetur.format.defaultFormatter.postcss": "prettier",
-  "vetur.format.defaultFormatter.scss": "prettier",
-  "vetur.format.defaultFormatterOptions": {
-    "js-beautify-html": {
-      "wrap_attributes": "force-expand-multiline"
+    {
+      "language": "html",
+      "autoFix": true
     },
-    "prettyhtml": {
-      "printWidth": 800,
-      "singleQuote": false,
-      "wrapAttributes": true,
-      "sortAttributes": false
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
     }
-  },
-  "git.confirmSync": true,
-  "editor.wordWrap": "on",
+  ],
+  "git.confirmSync": false,
+  "editor.wordWrap": "off",
   "liveServer.settings.donotShowInfoMsg": true,
-  "eslint.autoFixOnSave": true,
+  "eslint.autoFixOnSave": false,
   "prettier.disableLanguages": [
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
+    "handlebars",
+    "scss"
   ],
+  "prettier.printWidth": 150,
   "emmet.includeLanguages": {
     "vue-html": "html",
     "vue": "html"
+  },
+  "html.format.enable": true,
+  "html.format.indentHandlebars": true,
+  "workbench.editor.showTabs": true,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "gitlens.views.repositories.files.layout": "list",
+  "git.suggestSmartCommit": false,
+  "cSpell.ignoreWords": [
+    "frontmatter"
+  ],
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
