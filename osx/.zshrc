@@ -4,6 +4,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/tobias.weyer/.oh-my-zsh"
 export PATH=$PATH:/usr/local/go/bin
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # theme
 ZSH_THEME="agnoster"
@@ -19,7 +20,6 @@ plugins=(
   zsh-nvm
   npm
   web-search
-  z
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -28,21 +28,25 @@ source $ZSH/oh-my-zsh.sh
 # prompt
 prompt_context() {}
 
+eval $(thefuck --alias)
+
 # aliases
 alias rm=trash
 alias folder="open ."
 alias c="code ."
-alias zshreload="source ~/.zshrc"
+alias reload="source ~/.zshrc"
 alias codeextensions="code --list-extensions"
 alias p="~/documents/projects"
 alias gitAuth="ssh-add ~/.ssh/id_rsa"
 alias pull="git pull"
 alias push="git push"
-alias dev="git co develop"
+alias dev="git co develop && pull"
 alias gs="gulp serve"
+alias run="npm i && gs"
 alias auditCritical="npm audit | grep -E \"(Critical)\" -B3 -A10"
 alias auditHigh="npm audit | grep -E \"(High)\" -B3 -A10"
 alias auditCritialAndHigh="npm audit | grep -E \"(High | Critical)\" -B3 -A10"
+alias gitCleanUp="dev && git branch | grep \"fix/.*\|feat/.*\|feature/.*\|refactor/.*\|docu/.*\|delivery.*\|release.*\|rb-sync.*\|rb-update.*\|rb-upstream.*\" | xargs git branch --delete"
 
 # place this after nvm initialization!
 autoload -U add-zsh-hook
