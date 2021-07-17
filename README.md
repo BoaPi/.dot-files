@@ -10,3 +10,4 @@ different dot-files for editor, command line, dev setup etc...
 * VSCode
 * node
 * nvm
+* raycast
