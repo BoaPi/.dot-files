@@ -13,4 +13,3 @@ different dot-files for editor, command line, dev setup etc...
 * nvm
 * raycast
 * VIM
-* zellij
