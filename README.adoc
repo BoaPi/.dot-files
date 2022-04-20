@@ -1,15 +1,14 @@
-# dot-files
+= dot-files
 
 different dot-files for editor, command line, dev setup etc...
 
-## dev setup
+== dev setup
 
 * iTerm2
-* oh-my-zsh
-* Rust
-* cargo
+** oh-my-zsh
+** zsh-nvm
+** zsh-syntax-highlighting
+** zsh-autosuggestions
 * VSCode
-* node
 * nvm
 * raycast
-* VIM
