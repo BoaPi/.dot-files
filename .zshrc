@@ -33,15 +33,14 @@ prompt_context() {}
 eval $(thefuck --alias)
 
 # aliases
+alias reload="source ~/.zshrc"
 alias folder="open ."
 alias c="code ."
-alias reload="source ~/.zshrc"
 alias p="~/documents/projects"
 alias gitAuth="ssh-add ~/.ssh/id_rsa"
 alias pull="git pull"
 alias push="git push"
 alias dev="git co develop && pull"
-alias gs="gulp serve"
 alias auditCritical="npm audit | grep -E \"(Critical)\" -B3 -A10"
 alias auditHigh="npm audit | grep -E \"(High)\" -B3 -A10"
 alias auditCritialAndHigh="npm audit | grep -E \"(High | Critical)\" -B3 -A10"
