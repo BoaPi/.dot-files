@@ -2,20 +2,15 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/tobias.weyer/.oh-my-zsh"
+export ZSH="/Users/<USER>/.oh-my-zsh"
 export PATH=$PATH:/usr/local/go/bin
-export PATH="$HOME/.cargo/bin:$PATH"
-export DENO_INSTALL="/Users/tobias.weyer/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
 
 # theme
 ZSH_THEME="agnoster"
 
-# include Z, yo
-. ~/z.sh
-
 # plug-ins
 plugins=(
+  z
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
@@ -35,7 +30,7 @@ eval $(thefuck --alias)
 # aliases
 alias reload="source ~/.zshrc"
 alias folder="open ."
-alias c="code ."
+alias c="code-insiders ."
 alias p="~/documents/projects"
 alias gitAuth="ssh-add ~/.ssh/id_rsa"
 alias pull="git pull"
