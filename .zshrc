@@ -6,7 +6,7 @@ export ZSH="/Users/<USER>/.oh-my-zsh"
 export PATH=$PATH:/usr/local/go/bin
 
 # theme
-ZSH_THEME="agnoster"
+ZSH_THEME="bira"
 
 # plug-ins
 plugins=(
