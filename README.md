@@ -10,7 +10,7 @@ different dot-files for editor, command line, dev setup etc...
   * zsh-syntax-highlighting
   * zsh-autosuggestions
   * z
-  * [https://gist.github.com/DukeNgn/9312a65e1535b3b1bffd9fed2c892079](powerline fonts)
+  * https://gist.github.com/DukeNgn/9312a65e1535b3b1bffd9fed2c892079
   * [Profile](boapi.json)
 * VSCode
 * nvm
