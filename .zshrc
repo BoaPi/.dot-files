@@ -3,7 +3,18 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/<USER>/.oh-my-zsh"
-export PATH=$PATH:/usr/local/go/bin
+
+# Path to installed go binaries
+export GOPATH=$HOME/go
+export GOROOT=/usr/local/go
+export GOBIN=$HOME/go/bin
+export PATH=$PATH:$GOPATH
+export PATH=$PATH:$GOBIN
+export PATH=$PATH:$GOROOT/bin
+
+# Path to use pnpm
+export PNPM_HOME="/Users/<USER>/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
 
 # theme
 ZSH_THEME="bira"
