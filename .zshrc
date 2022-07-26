@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/<USER>/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Path to installed go binaries
 export GOPATH=$HOME/go
@@ -13,7 +13,7 @@ export PATH=$PATH:$GOBIN
 export PATH=$PATH:$GOROOT/bin
 
 # Path to use pnpm
-export PNPM_HOME="/Users/<USER>/Library/pnpm"
+export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
 # theme
@@ -39,10 +39,10 @@ prompt_context() {}
 eval $(thefuck --alias)
 
 # aliases
-alias reload="source ~/.zshrc"
+alias reload="source $HOME/.zshrc"
 alias folder="open ."
 alias c="code-insiders ."
-alias p="~/documents/projects"
+alias p="$HOME/documents/projects"
 alias gitAuth="ssh-add ~/.ssh/id_rsa"
 alias pull="git pull"
 alias push="git push"
