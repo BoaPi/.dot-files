@@ -1,1 +1,1 @@
-print("hello from boapi")
+require("boapi.set")
