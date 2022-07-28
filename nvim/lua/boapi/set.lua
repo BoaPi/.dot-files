@@ -14,5 +14,3 @@ vim.opt.smartindent = true
 
 -- line options
 vim.opt.wrap = false		-- prevent line wrapping
-
-
