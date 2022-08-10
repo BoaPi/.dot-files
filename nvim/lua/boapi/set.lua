@@ -17,3 +17,6 @@ vim.opt.wrap = false		-- prevent line wrapping
 
 -- key mappings
 vim.g.mapleader = " "
+
+-- window options
+vim.opt.laststatus = 3
