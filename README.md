@@ -8,6 +8,7 @@ different dot-files for editor, command line, dev setup etc...
 - add symlinks to `.zshrc` and `nvim`
   - ZSH - `ln -s ~/.dot-files/.zshrc`
   - NVIM - `ln -s ~/.dot-files/nvim`
+  - alacritty - `ln -s ~/.dot-files/alacritty/.alacritty.yml`
 
 ## dev setup
 
