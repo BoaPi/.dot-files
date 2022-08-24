@@ -16,6 +16,9 @@ export PATH=$PATH:$GOROOT/bin
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
+# editor
+export EDITOR='nvim'
+
 # theme
 ZSH_THEME="bira"
 
