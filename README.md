@@ -10,6 +10,7 @@ different dot-files for editor, command line, dev setup etc...
   - NVIM - `ln -s ~/.dot-files/nvim`
   - alacritty - `ln -s ~/.dot-files/alacritty/.alacritty.yml`
   - tmux - `ln -s ~/.dot-files/tmux/tmux.conf`
+  - tmuxinator - `ln -s ~/.dot-files/tmux/tmuxinator`
 
 ## dev setup
 
