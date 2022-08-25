@@ -14,9 +14,12 @@ different dot-files for editor, command line, dev setup etc...
 
 ## dev setup
 
-| Tool    | Description                        | Plugins                                                                                                                                                     |
-| ------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| iTerm2  | used terminal                      | `oh-my-szh`, `zsh-nvm`, `zsh-syntax-highlighting`, `zsh-autosuggestions`, `z`, [Powerline Fonts](https://github.com/powerline/fonts), [Profile](boapi.json) |
-| VSCode  | used editor                        |                                                                                                                                                             |
-| nvm     | manager for different node version |                                                                                                                                                             |
-| raycast | alternative for spotlight          |                                                                                                                                                             |
+| Tool       | Description                        | Plugins                                                                                                                                                     |
+| ---------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| alacritty  | used terminal                      |                                                                                                                                                             |
+| tmux       | used terminal multiplexer          |                                                                                                                                                             |
+| tmuxinator | used tmux session manager          |                                                                                                                                                             |
+| zsh        | used shell                         | `oh-my-szh`, `zsh-nvm`, `zsh-syntax-highlighting`, `zsh-autosuggestions`, `z`, [Powerline Fonts](https://github.com/powerline/fonts), [Profile](boapi.json) |
+| neovim     | used editor                        |                                                                                                                                                             |
+| nvm        | manager for different node version |                                                                                                                                                             |
+| raycast    | alternative for spotlight          |                                                                                                                                                             |
