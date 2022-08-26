@@ -1,15 +1,15 @@
 # font styles
 font:
   normal:
-    family: "Dank Mono"
+    family: "Hack Nerd Font Mono"
     style: Regular
   bold:
-    family: "Dank Mono"
+    family: "Hack Nerd Font Mono"
     style: Bold
   italic:
-    family: "Dank Mono"
+    family: "Hack Nerd Font Mono"
     style: Italic
-  size: 12.8
+  size: 12
 
 # set option key to not send "esc"
 alt_send_esc: false
