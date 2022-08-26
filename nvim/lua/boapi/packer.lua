@@ -25,6 +25,9 @@ packer.startup(function()
   local use = use
   use 'wbthomason/packer.nvim'
   use 'folke/tokyonight.nvim'
-  use 'vim-airline/vim-airline'
+  use {
+    'nvim-lualine/lualine.nvim',
+     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
   end
 )
