@@ -1,3 +1,6 @@
+-- key mappings
+vim.g.mapleader = " "           -- new prefix key
+
 -- line number options
 vim.opt.nu = true		        -- show current line number where the cursor is
 vim.opt.relativenumber = true	-- adding relativ line numbers to where the cursor is
@@ -14,9 +17,6 @@ vim.opt.smartindent = true
 
 -- line options
 vim.opt.wrap = false		    -- prevent line wrapping
-
--- key mappings
-vim.g.mapleader = " "
 
 -- window options
 vim.opt.laststatus = 3          -- set status bar to only appear once for all split views
