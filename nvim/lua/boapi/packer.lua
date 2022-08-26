@@ -25,5 +25,6 @@ packer.startup(function()
   local use = use
   use 'wbthomason/packer.nvim'
   use 'folke/tokyonight.nvim'
+  use 'vim-airline/vim-airline'
   end
 )
