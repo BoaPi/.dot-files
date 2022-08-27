@@ -9,7 +9,7 @@ font:
   italic:
     family: "Hack Nerd Font Mono"
     style: Italic
-  size: 12
+  size: 12.5
 
 # set option key to not send "esc"
 alt_send_esc: false
