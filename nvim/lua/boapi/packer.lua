@@ -23,8 +23,17 @@ packer.init({
 --- startup and add configure plugins
 packer.startup(function()
   local use = use
+
   use 'wbthomason/packer.nvim'
+
+  -- treesiiter and language package
+  use 'nvim-treesitter/nvim-treesitter'
+  use 'sheerun/vim-polyglot'
+ 
+  -- color theme
   use 'folke/tokyonight.nvim'
+
+  --statusline and related icons
   use {
     'nvim-lualine/lualine.nvim',
      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
