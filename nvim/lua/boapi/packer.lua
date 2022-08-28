@@ -29,6 +29,10 @@ packer.startup(function()
   -- treesiiter and language package
   use 'nvim-treesitter/nvim-treesitter'
   use 'sheerun/vim-polyglot'
+
+  -- lsp configurations
+  use 'neovim/nvim-lspconfig'
+  use 'hrsh7th/nvim-cmp'
  
   -- color theme
   use 'folke/tokyonight.nvim'
