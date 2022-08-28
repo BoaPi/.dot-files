@@ -1,41 +1,40 @@
 # /Users/boapi/.config/tmuxinator/side-projects.yml
-
 name: side-projects
-root: ~/Documents/projects/
+root: ~/<%= @settings["workspace"] %>
 
 windows:
   - .dot-files:
-      root: ~/Documents/projects/.dot-files
+      root: ~/<%= @settings["workspace"] %>/.dot-files
       layout: main-vertical
       panes:
         - nvim .
         - 
   - BoaPi:
-      root: ~/Documents/projects/BoaPi
+      root: ~/<%= @settings["workspace"] %>/BoaPi
       layout: main-vertical
       panes:
         - nvim .
         - 
   - .dev:
-      root: ~/Documents/projects/tobiasweyer.dev
+      root: ~/<%= @settings["workspace"] %>/tobiasweyer.dev
       layout: main-vertical
       panes:
         - nvim .
         - 
   - grrs:
-      root: ~/Documents/projects/learning-rust/grrs
+      root: ~/<%= @settings["workspace"] %>/learning-rust/grrs
       layout: main-vertical
       panes:
         - nvim .
         - 
   - learning-rust: 
-      root: ~/Documents/projects/learning-rust
+      root: ~/<%= @settings["workspace"] %>/learning-rust
       layout: main-vertical
       panes:
         - nvim .
         - 
   - notes:
-      root: ~/Documents/projects/notes
+      root: ~/<%= @settings["workspace"] %>/notes
       layout: main-vertical
       panes:
         - nvim .
