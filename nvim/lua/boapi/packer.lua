@@ -24,6 +24,7 @@ packer.init({
 packer.startup(function()
   local use = use
 
+  -- plugin manager
   use 'wbthomason/packer.nvim'
 
   -- treesiiter and language package
@@ -34,6 +35,12 @@ packer.startup(function()
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'
  
+  -- git related stuff
+  use {
+    'TimUntersberger/neogit',
+    requires = 'nvim-lua/plenary.nvim'
+  }
+
   -- color theme
   use 'folke/tokyonight.nvim'
 
