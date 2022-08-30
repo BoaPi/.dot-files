@@ -42,6 +42,9 @@ prompt_context() {}
 eval $(thefuck --alias)
 
 # aliases
+alias vim="nvim"
+alias nv="nvim"
+alias v="nvim"
 alias reload="source $HOME/.zshrc"
 alias folder="open ."
 alias c="code-insiders ."
