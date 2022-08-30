@@ -17,6 +17,7 @@ different dot-files for editor, command line, dev setup etc...
 | Tool       | Description                        | Plugins                                                                                                                                                     |
 | ---------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | alacritty  | used terminal                      |                                                                                                                                                             |
+| NerdFont   | used as font in alacritty & tmux   | [NerdFonts](https://www.nerdfonts.com/cheat-sheet)                                                                                                          |
 | tmux       | used terminal multiplexer          |                                                                                                                                                             |
 | tmuxinator | used tmux session manager          |                                                                                                                                                             |
 | zsh        | used shell                         | `oh-my-szh`, `zsh-nvm`, `zsh-syntax-highlighting`, `zsh-autosuggestions`, `z`, [Powerline Fonts](https://github.com/powerline/fonts), [Profile](boapi.json) |
