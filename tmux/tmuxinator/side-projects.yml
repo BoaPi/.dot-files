@@ -5,37 +5,25 @@ root: ~/<%= @settings["workspace"] %>
 windows:
   - .dot-files:
       root: ~/<%= @settings["workspace"] %>/.dot-files
-      layout: main-vertical
       panes:
         - nvim .
-        - 
   - BoaPi:
       root: ~/<%= @settings["workspace"] %>/BoaPi
-      layout: main-vertical
       panes:
         - nvim .
-        - 
   - .dev:
       root: ~/<%= @settings["workspace"] %>/tobiasweyer.dev
-      layout: main-vertical
       panes:
         - nvim .
-        - 
   - grrs:
       root: ~/<%= @settings["workspace"] %>/learning-rust/grrs
-      layout: main-vertical
       panes:
         - nvim .
-        - 
   - learning-rust: 
       root: ~/<%= @settings["workspace"] %>/learning-rust
-      layout: main-vertical
       panes:
         - nvim .
-        - 
   - notes:
       root: ~/<%= @settings["workspace"] %>/notes
-      layout: main-vertical
       panes:
         - nvim .
-        - 
