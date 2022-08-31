@@ -34,20 +34,29 @@ packer.startup(function()
   -- lsp configurations
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'
- 
-  -- git related stuff
+
+  -- telescope realted
+  use 'nvim-telescope/telescope.nvim'
+  use 'nvim-lua/plenary.nvim'
   use {
-    'TimUntersberger/neogit',
-    requires = 'nvim-lua/plenary.nvim'
+    'nvim-telescope/telescope-fzf-native.nvim',
+    run = 'make'
   }
+
+  -- git related
+  use 'TimUntersberger/neogit'
 
   -- color theme
   use 'folke/tokyonight.nvim'
 
-  --statusline and related icons
+  --statusline
+  use 'nvim-lualine/lualine.nvim'
+
+  -- icons
   use {
-    'nvim-lualine/lualine.nvim',
-     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    'kyazdani42/nvim-web-devicons',
+    opt = true
   }
+
   end
 )
