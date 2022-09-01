@@ -12,7 +12,7 @@ nnoremap("<leader>gc", "<CMD>Telescope git_commits<CR>")
 nnoremap("<leader>ts", "<CMD>Telescope treesitter<CR>")
 
 -- Neogit quick actions
-nnoremap("<leaderng", "<CMD>Neogit<CR>")
+nnoremap("<leader>ng", "<CMD>Neogit<CR>")
 
 -- disable arrow keys normal, visual and operator-pending mode
 noremap("<up>", "<nop>")
