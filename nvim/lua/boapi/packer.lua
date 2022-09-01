@@ -43,9 +43,6 @@ packer.startup(function()
     run = 'make'
   }
   
-  -- file-tree
-  use 'kyazdani42/nvim-tree.lua'
-
   -- git related
   use 'TimUntersberger/neogit'
 
