@@ -1,6 +1,5 @@
 local nnoremap = require("boapi.keymap").nnoremap
 local noremap = require("boapi.keymap").noremap
-local telescope = require("telescope.builtin")
 
 -- quick access of netrw
 nnoremap("<leader>jk", "<CMD>Ex<CR>")
