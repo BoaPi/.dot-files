@@ -42,6 +42,9 @@ packer.startup(function()
     'nvim-telescope/telescope-fzf-native.nvim',
     run = 'make'
   }
+  
+  -- file-tree
+  use 'kyazdani42/nvim-tree.lua'
 
   -- git related
   use 'TimUntersberger/neogit'
