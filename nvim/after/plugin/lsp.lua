@@ -17,3 +17,8 @@ end
 lspconfig.rust_analyzer.setup{
   on_attach = on_attach,
 }
+
+-- lua
+lspconfig.sumneko_lua.setup{
+  on_attach = on_attach,
+}
