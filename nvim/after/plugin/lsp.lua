@@ -10,7 +10,7 @@ local on_attach = function(_, bufnr)
   -- See `:help vim.lsp.*` for documentation on any of the below functions
   local bufopts = { noremap = true, silent = true, buffer = bufnr }
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
-  vim.keymap.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
+  vim.keymap.set('n', '<leader>f', vim.lsp.buf.formatting, bufopts)
 end
 
 -- different language servers
