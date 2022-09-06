@@ -12,7 +12,7 @@ nnoremap('<leader>ts', '<CMD>Telescope treesitter<CR>')
 nnoremap('<leader>fb', '<CMD>Telescope file_browser<CR>')
 
 -- Neogit quick actions
-nnoremap('<leader>ng', '<CMD>Neogit<CR>')
+nnoremap('<leader>ng', '<CMD>Neogit<CR>')   -- open Neogut
 
 -- Harpoon quick actions
 nnoremap('<leader>hh', '<CMD>lua require("harpoon.ui").toggle_quick_menu()<CR>')    -- open menu
