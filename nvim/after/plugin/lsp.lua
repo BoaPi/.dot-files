@@ -21,11 +21,13 @@ end
 -- rust
 lspconfig.rust_analyzer.setup {
   on_attach = on_attach,
+  capabilities = capabilities,
 }
 
 -- lua
 lspconfig.sumneko_lua.setup {
   on_attach = on_attach,
+  capabilities = capabilities,
   settings = {
     Lua = {
       runtime = {
