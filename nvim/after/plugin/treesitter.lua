@@ -10,6 +10,7 @@ configs.setup {
     "lua",
     "make",
     "markdown",
+    "markdown_inline",
     "regex",
     "rust",
     "scss",
