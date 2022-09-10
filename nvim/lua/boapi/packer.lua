@@ -55,6 +55,7 @@ packer.startup(function()
 
   -- color theme
   use 'folke/tokyonight.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   --statusline
   use 'nvim-lualine/lualine.nvim'
