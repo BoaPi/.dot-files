@@ -5,14 +5,17 @@ vim.api.nvim_create_autocmd("BufWritePost", {
     pattern = "main.rs",
     callback = function()
         print("File saved!!!")
-        vim.api.nvim_buf_set_lines(bufnr, 0, 0, false, {
-            "hello",
-            "world",
-        })
-        vim.fn.jobstart({ "cargo", "run", "main.rs" }, {
+        vim.fn.jobstart({ "cargo", "run" }, {
             stdout_buffered = true,
             on_stdout = function(_, data)
                 if data then
+                    print(data)
+                    vim.api.nvim_buf_set_lines(bufnr, -1, -1, false, data)
+                end
+            end,
+            on_stderr = function(_, data)
+                if data then
+                    print(data)
                     vim.api.nvim_buf_set_lines(bufnr, -1, -1, false, data)
                 end
             end
