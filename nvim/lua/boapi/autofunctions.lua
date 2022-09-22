@@ -1,10 +1,12 @@
+-- create custom auto command to run on certain buffer interactions
+local name = "BoaPi custom auto commands"
 local bufnr = 61
 local rust_commands = {
     run = { "cargo", "run" },
     fmt = { "cargo", "fmt" },
 }
 
-append_data = function(_, data)
+Append_data = function(_, data)
     if data then
         vim.api.nvim_buf_set_lines(bufnr, -1, -1, false, data)
     end
