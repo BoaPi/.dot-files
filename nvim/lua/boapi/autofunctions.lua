@@ -10,6 +10,14 @@ append_data = function(_, data)
     end
 end
 
+-- formatting rust code before writing buffer
+vim.api.nvim_create_autocmd("BufWritePre", {
+    group = vim.api.nvim_create_augroup("AutoSaveFormatting", { clear = true }),
+    pattern = "*.rs",
+    callback = function()
+        vim.fn.jobstart(rust_commands["fmt"])
+    end,
+})
 
 -- run "cargo run" after writing to stdout_buffer
 -- getting both outputs from stdout and stderr
