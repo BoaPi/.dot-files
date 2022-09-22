@@ -9,7 +9,7 @@ vim.api.nvim_create_autocmd("BufWritePost", {
     pattern = "main.rs",
     callback = function()
         vim.api.nvim_buf_set_lines(bufnr, 0, -1, false, { "output of main.rs" })
-        vim.fn.jobstart({ "cargo", "run" }, {
+        vim.fn.jobstart(rust_commands["run"], {
             stdout_buffered = true,
             on_stdout = function(_, data)
                 if data then
