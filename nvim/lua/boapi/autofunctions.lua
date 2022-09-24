@@ -7,13 +7,15 @@ local rust_commands = {
 
 
 -- formatting rust code before writing buffer
-vim.api.nvim_create_autocmd("BufWritePre", {
-    group = vim.api.nvim_create_augroup(name, { clear = true }),
-    pattern = "*.rs",
-    callback = function()
-        vim.fn.jobstart(rust_commands["fmt"])
-    end,
-})
+local rust_auto_format = function()
+    vim.api.nvim_create_autocmd("BufWritePre", {
+        group = vim.api.nvim_create_augroup(name, { clear = true }),
+        pattern = "*.rs",
+        callback = function()
+            vim.fn.jobstart(rust_commands["fmt"])
+        end,
+    })
+end
 
 -- run "cargo run" after writing to stdout_buffer
 -- getting both outputs from stdout and stderr
