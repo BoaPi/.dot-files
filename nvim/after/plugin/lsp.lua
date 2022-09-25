@@ -1,4 +1,5 @@
 -- setup
+local luadev = require('lua-dev').setup({})
 local lspconfig = require 'lspconfig'
 local cmp = require 'cmp'
 local luasnip = require 'luasnip'
@@ -33,6 +34,9 @@ lspconfig.sumneko_lua.setup {
       runtime = {
         -- used Lua version
         version = 'LuaJIT',
+      },
+      completion = {
+        callSnipper = 'Replace'
       },
       diagnostics = {
         -- Get the language server to recognize the `vim` global
