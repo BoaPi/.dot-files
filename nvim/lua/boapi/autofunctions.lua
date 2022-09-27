@@ -5,7 +5,7 @@ local rust_commands = {
     fmt = { "cargo", "fmt" },
 }
 
-
+-- rust things
 -- formatting rust code before writing buffer
 local rust_auto_format = function()
     vim.api.nvim_create_autocmd("BufWritePre", {
