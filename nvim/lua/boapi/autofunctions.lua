@@ -32,6 +32,3 @@ vim.api.nvim_create_user_command("BoaPiRustRun", function()
     local bufnr = vim.fn.input("Bufnr for main.rs output: ")
     run_main(tonumber(bufnr))
 end, {})
-
--- call autocommands
-rust_auto_format()
