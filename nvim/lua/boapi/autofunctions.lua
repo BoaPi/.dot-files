@@ -2,7 +2,6 @@
 local name = "BoaPi custom auto commands"
 local rust_commands = {
     run = { "cargo", "run" },
-    fmt = { "cargo", "fmt" },
 }
 
 -- run "cargo run" after writing to stdout_buffer
