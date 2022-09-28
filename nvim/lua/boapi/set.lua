@@ -20,6 +20,7 @@ vim.opt.wrap = false		    -- prevent line wrapping
 
 -- window options
 vim.opt.laststatus = 3          -- set status bar to only appear once for all split views
+vim.opt.splitright = true 
 
 -- mix options
 vim.opt.scrolloff = 20          -- set minimum number of lines, where scrolling starts
