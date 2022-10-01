@@ -7,7 +7,13 @@ local noremap = require('boapi.keymap').noremap
 nnoremap('<leader>jk', '<CMD>Ex<CR>')
 
 -- =========================================================== --
--- telescope quickactions
+-- moving lines quick actions
+-- =========================================================== --
+nnoremap('<C-j>', '<CMD>:m .+1<CR>')
+nnoremap('<C-k>', '<CMD>:m .-2<CR>')
+
+-- =========================================================== --
+-- telescope quick actions
 -- =========================================================== --
 nnoremap('<leader>ff', '<CMD>Telescope find_files<CR>')
 nnoremap('<leader>gf', '<CMD>Telescope git_files<CR>')
