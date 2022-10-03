@@ -1,5 +1,6 @@
 local nnoremap = require('boapi.keymap').nnoremap
 local inoremap = require('boapi.keymap').inoremap
+local vnoremap = require('boapi.keymap').vnoremap
 local noremap = require('boapi.keymap').noremap
 
 -- =========================================================== --
