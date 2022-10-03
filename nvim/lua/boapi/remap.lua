@@ -11,10 +11,12 @@ nnoremap('<leader>jk', '<CMD>Ex<CR>')
 -- =========================================================== --
 -- moving lines quick actions
 -- =========================================================== --
-nnoremap('<C-j>', '<CMD>:m .+1<CR>') -- move line down by one
-nnoremap('<C-k>', '<CMD>:m .-2<CR>') -- move line up by one
-inoremap('<C-j>', '<ESC><CMD>:m .+1<CR>') -- move line down by one
-inoremap('<C-k>', '<ESC><CMD>:m .-2<CR>') -- move line up by one
+nnoremap('<C-j>', '<CMD>:m .+1<CR>==') -- move line down by one
+nnoremap('<C-k>', '<CMD>:m .-2<CR>==') -- move line up by one
+inoremap('<C-j>', '<ESC><CMD>:m .+1<CR>==') -- move line down by one
+inoremap('<C-k>', '<ESC><CMD>:m .-2<CR>==') -- move line up by one
+vnoremap('<C-j>', ":m '>+1<CR>gv=gv") -- move line down by one
+vnoremap('<C-k>', ":m '<-2<CR>gv=gv") -- move line up by one
 
 -- =========================================================== --
 -- telescope quick actions
