@@ -2,7 +2,7 @@
 
 different dot-files for editor, command line, dev setup etc...
 
-## how to
+## How to
 
 this commands are only examples and needs to be adjusted, if the directory structure is different.
 
