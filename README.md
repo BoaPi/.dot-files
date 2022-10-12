@@ -4,6 +4,8 @@ different dot-files for editor, command line, dev setup etc...
 
 ## how to
 
+this commands are only examples and needs to be adjusted, if the directory structure is different.
+
 - `git clone git@github.com:BoaPi/.dot-files.git ~/.dot-files`
 - add symlinks to `.zshrc` and `nvim`
   - ZSH - `ln -s ~/.dot-files/.zshrc`
