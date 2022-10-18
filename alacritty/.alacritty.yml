@@ -1,16 +1,15 @@
 # font styles
 font:
   normal:
-    family: "Hack Nerd Font Mono"
-    style: Regular
+    family: "BlexMono Nerd Font Mono"
+    style: Text
   bold:
-    family: "Hack Nerd Font Mono"
+    family: "BlexMono Nerd Font Mono"
     style: Bold
   italic:
-    family: "Hack Nerd Font Mono"
+    family: "BlexMono Nerd Font Mono"
     style: Italic
-  size: 12.5
-
+  size: 13.5
 # set option key to not send "esc"
 alt_send_esc: false
 
