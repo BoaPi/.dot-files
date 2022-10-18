@@ -5,7 +5,7 @@ font:
     style: Text
   bold:
     family: "BlexMono Nerd Font Mono"
-    style: Bold
+    style: Semi Bold
   italic:
     family: "BlexMono Nerd Font Mono"
     style: Italic
