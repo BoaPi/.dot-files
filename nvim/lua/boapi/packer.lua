@@ -57,9 +57,6 @@ packer.startup(function()
   -- git related
   use 'TimUntersberger/neogit'
 
-  -- formatting tools
-  use 'dhruvasagar/vim-table-mode'
-
   -- color theme
   use 'folke/tokyonight.nvim'
   use { "catppuccin/nvim", as = "catppuccin" }
