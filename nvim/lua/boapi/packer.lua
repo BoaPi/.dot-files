@@ -37,7 +37,7 @@ packer.startup(function()
   use 'hrsh7th/cmp-nvim-lsp'
   use 'saadparwaiz1/cmp_luasnip'
   use 'L3MON4D3/LuaSnip'
-  use 'folke/lua-dev.nvim'
+  use 'folke/neodev.nvim'
 
   -- telescope realted
   use 'nvim-telescope/telescope.nvim'
@@ -51,9 +51,14 @@ packer.startup(function()
   -- harpoon to fix some files
   use 'ThePrimeagen/harpoon'
 
+  -- floating terminl
+  use 'numToStr/FTerm.nvim'
+
   -- git related
   use 'TimUntersberger/neogit'
-  use 'kdheepak/lazygit.nvim'
+
+  -- formatting tools
+  use 'dhruvasagar/vim-table-mode'
 
   -- color theme
   use 'folke/tokyonight.nvim'
