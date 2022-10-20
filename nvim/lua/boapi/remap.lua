@@ -36,10 +36,10 @@ nnoremap('<leader>gg', '<CMD>LazyGit<CR>') -- open LazyGit
 -- =========================================================== --
 -- Harpoon quick actions
 -- =========================================================== --
-nnoremap('<leader>hh', '<CMD>lua require("harpoon.ui").toggle_quick_menu()<CR>')    -- open menu
-nnoremap('<leader>hs', '<CMD>lua require("harpoon.mark").add_file()<CR>')           -- set mark on file
-nnoremap('<leader>hr', '<CMD>lua require("harpoon.mark").rm_file()<CR>')            -- remove mark from file
-nnoremap('<leader>hc', '<CMD>lua require("harpoon.mark").clear_all()<CR>')          -- clear all marks
+nnoremap('<leader>hh', '<CMD>lua require("harpoon.ui").toggle_quick_menu()<CR>') -- open menu
+nnoremap('<leader>hs', '<CMD>lua require("harpoon.mark").add_file()<CR>') -- set mark on file
+nnoremap('<leader>hr', '<CMD>lua require("harpoon.mark").rm_file()<CR>') -- remove mark from file
+nnoremap('<leader>hc', '<CMD>lua require("harpoon.mark").clear_all()<CR>') -- clear all marks
 
 -- =========================================================== --
 -- disable arrow keys normal, visual and operator-pending mode
