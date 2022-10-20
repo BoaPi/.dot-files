@@ -30,7 +30,8 @@ nnoremap('<leader>fb', '<CMD>Telescope file_browser<CR>')
 -- =========================================================== --
 -- Git quick actions
 -- =========================================================== --
-nnoremap('<leader>ng', '<CMD>Neogit<CR>')   -- open Neogut
+nnoremap('<leader>ng', '<CMD>Neogit<CR>') -- open Neogut
+nnoremap('<leader>gg', '<CMD>LazyGit<CR>') -- open LazyGit
 
 -- =========================================================== --
 -- Harpoon quick actions
