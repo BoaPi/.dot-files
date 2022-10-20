@@ -28,7 +28,7 @@ nnoremap('<leader>ts', '<CMD>Telescope treesitter<CR>')
 nnoremap('<leader>fb', '<CMD>Telescope file_browser<CR>')
 
 -- =========================================================== --
--- Neogit quick actions
+-- Git quick actions
 -- =========================================================== --
 nnoremap('<leader>ng', '<CMD>Neogit<CR>')   -- open Neogut
 
