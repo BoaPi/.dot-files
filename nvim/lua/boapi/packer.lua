@@ -53,6 +53,7 @@ packer.startup(function()
 
   -- git related
   use 'TimUntersberger/neogit'
+  use 'kdheepak/lazygit.nvim'
 
   -- color theme
   use 'folke/tokyonight.nvim'
