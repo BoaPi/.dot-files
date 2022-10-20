@@ -26,4 +26,4 @@ this commands are only examples and needs to be adjusted, if the directory struc
 | neovim     | used editor                        |                                                                                                                                                             |
 | nvm        | manager for different node version |                                                                                                                                                             |
 | raycast    | alternative for spotlight          |                                                                                                                                                             |
-| lazy git   | used git cmd tool                  |                                                                                                                                                             |
+| GitUi      | used git cmd tool                  |                                                                                                                                                             |
