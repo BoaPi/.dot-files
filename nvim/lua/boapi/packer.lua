@@ -28,7 +28,10 @@ packer.startup(function()
   use 'wbthomason/packer.nvim'
 
   -- treesiiter and language package
-  use 'nvim-treesitter/nvim-treesitter'
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
   use 'sheerun/vim-polyglot'
 
   -- lsp configurations
@@ -56,7 +59,11 @@ packer.startup(function()
 
   -- color theme
   use 'folke/tokyonight.nvim'
-  use { "catppuccin/nvim", as = "catppuccin" }
+  use {
+    "catppuccin/nvim",
+    as = "catppuccin",
+    commit = "c9c272f8f53968473873478591bfb4f5c1418370"
+  }
 
   --statusline
   use 'nvim-lualine/lualine.nvim'
