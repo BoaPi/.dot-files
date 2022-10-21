@@ -32,24 +32,3 @@ vim.api.nvim_create_user_command("BoaPiRustRun", function()
     local bufnr = vim.fn.input("Bufnr for main.rs output: ")
     run_main(tonumber(bufnr))
 end, {})
-
--- FTerm relates auto commands for easier key binding use
-local fterm = require("FTerm")
-
-vim.api.nvim_create_user_command("FTermOpen", fterm.open, { bang = true })
-vim.api.nvim_create_user_command("FTermClose", fterm.close, { bang = true })
-vim.api.nvim_create_user_command("FTermToggle", fterm.toggle, { bang = true })
-
--- setup a floating winfow with gitui inside
-local gitui = fterm:new({
-    ft = 'fterm_gitui', -- You can also override the default filetype, if you want
-    cmd = "gitui",
-    dimensions = {
-        height = 0.9,
-        width = 0.9
-    }
-})
-
-vim.api.nvim_create_user_command('GitUi', function()
-    gitui:toggle()
-end, {})

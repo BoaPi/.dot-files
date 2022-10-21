@@ -51,11 +51,8 @@ packer.startup(function()
   -- harpoon to fix some files
   use 'ThePrimeagen/harpoon'
 
-  -- floating terminl
-  use 'numToStr/FTerm.nvim'
-
   -- git related
-  use 'TimUntersberger/neogit'
+  use 'kdheepak/lazygit.nvim'
 
   -- color theme
   use 'folke/tokyonight.nvim'
