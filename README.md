@@ -16,14 +16,15 @@ this commands are only examples and needs to be adjusted, if the directory struc
 
 ## dev setup
 
-| Tool       | Description                        | Plugins                                                                                                                                                     |
-| ---------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| alacritty  | used terminal                      |                                                                                                                                                             |
-| NerdFont   | used as font in alacritty & tmux   | [NerdFonts](https://www.nerdfonts.com/cheat-sheet)                                                                                                          |
-| tmux       | used terminal multiplexer          |                                                                                                                                                             |
-| tmuxinator | used tmux session manager          |                                                                                                                                                             |
-| zsh        | used shell                         | `oh-my-szh`, `zsh-nvm`, `zsh-syntax-highlighting`, `zsh-autosuggestions`, `z`, [Powerline Fonts](https://github.com/powerline/fonts), [Profile](boapi.json) |
-| neovim     | used editor                        |                                                                                                                                                             |
-| nvm        | manager for different node version |                                                                                                                                                             |
-| raycast    | alternative for spotlight          |                                                                                                                                                             |
-| GitUi      | used git cmd tool                  |                                                                                                                                                             |
+| Tool       | Description                               | Plugins                                                                                                                                                     |
+| ---------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| catppuccin | overall theme for vim, alacritty and tmux |                                                                                                                                                             |
+| neovim     | used editor                               |                                                                                                                                                             |
+| alacritty  | used terminal                             |                                                                                                                                                             |
+| tmux       | used terminal multiplexer                 |                                                                                                                                                             |
+| tmuxinator | used tmux session manager                 |                                                                                                                                                             |
+| NerdFont   | used as font in alacritty & tmux          | [NerdFonts](https://www.nerdfonts.com/cheat-sheet)                                                                                                          |
+| GitUi      | used git cmd tool                         |                                                                                                                                                             |
+| zsh        | used shell                                | `oh-my-szh`, `zsh-nvm`, `zsh-syntax-highlighting`, `zsh-autosuggestions`, `z`, [Powerline Fonts](https://github.com/powerline/fonts), [Profile](boapi.json) |
+| nvm        | manager for different node version        |                                                                                                                                                             |
+| raycast    | alternative for spotlight                 |                                                                                                                                                             |
