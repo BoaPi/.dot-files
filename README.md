@@ -28,3 +28,4 @@ this commands are only examples and needs to be adjusted, if the directory struc
 | zsh        | used shell                                | `oh-my-szh`, `zsh-nvm`, `zsh-syntax-highlighting`, `zsh-autosuggestions`, `z`, [Powerline Fonts](https://github.com/powerline/fonts), [Profile](boapi.json) |
 | nvm        | manager for different node version        |                                                                                                                                                             |
 | raycast    | alternative for spotlight                 |                                                                                                                                                             |
+| ripgrep    | rust written grep alternative             |                                                                                                                                                             |
