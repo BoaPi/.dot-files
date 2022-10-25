@@ -26,6 +26,7 @@ nnoremap('<leader>gf', '<CMD>Telescope git_files<CR>')
 nnoremap('<leader>gc', '<CMD>Telescope git_commits<CR>')
 nnoremap('<leader>ts', '<CMD>Telescope treesitter<CR>')
 nnoremap('<leader>fb', '<CMD>Telescope file_browser<CR>')
+nnoremap('<leader>gs', '<CMD>Telescope grep_string<CR>')
 
 -- =========================================================== --
 -- Git quick actions
