@@ -51,7 +51,7 @@ packer.startup(function()
   }
   use 'nvim-telescope/telescope-file-browser.nvim'
 
-  -- harpoon to fix some files
+  -- harpoon to mark some files
   use 'ThePrimeagen/harpoon'
 
   -- git related
