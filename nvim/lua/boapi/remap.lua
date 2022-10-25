@@ -33,11 +33,6 @@ nnoremap('<leader>fb', '<CMD>Telescope file_browser<CR>')
 nnoremap('<leader>gg', '<CMD>LazyGit<CR>') -- open LazyGit
 
 -- =========================================================== --
--- FTerm quick actions
--- =========================================================== --
-nnoremap('<leader>ft', '<CMD>FTermOpen<CR>')
-
--- =========================================================== --
 -- Harpoon quick actions
 -- =========================================================== --
 nnoremap('<leader>hh', '<CMD>lua require("harpoon.ui").toggle_quick_menu()<CR>') -- open menu
