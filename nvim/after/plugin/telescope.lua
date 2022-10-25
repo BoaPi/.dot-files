@@ -1,7 +1,7 @@
 -- setup telescope
 local telescope = require('telescope')
-telescope.setup{
-    extensions = {
+telescope.setup {
+	extensions = {
 		file_browser = {
 			hidden = true,
 		},
