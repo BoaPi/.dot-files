@@ -32,3 +32,6 @@ vim.api.nvim_create_user_command("BoaPiRustRun", function()
     local bufnr = vim.fn.input("Bufnr for main.rs output: ")
     run_main(tonumber(bufnr))
 end, {})
+
+-- auto commands for switching tabs
+-- TODO: create auto command to switch to tab 1, 2, 3, 4, 5 etc.
