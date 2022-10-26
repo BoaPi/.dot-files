@@ -34,4 +34,15 @@ vim.api.nvim_create_user_command("BoaPiRustRun", function()
 end, {})
 
 -- auto commands for switching tabs
--- TODO: create auto command to switch to tab 1, 2, 3, 4, 5 etc.
+-- get user input
+-- get current tab count
+-- switch to tab if input is valid and tab present
+vim.api.nvim_create_user_command("SwitchTab", function()
+    local input = tonumber(vim.fn.getcharstr())
+    local tab_count = vim.fn.tabpagenr('$')
+
+    if (input ~= nil and input <= tab_count) then
+        -- TODO: create auto command to switch to tab 1, 2, 3, 4, 5 etc.
+        vim.api.nvim_cmd({ cmd = 'tabn', args = { input } }, {})
+    end
+end, {})
