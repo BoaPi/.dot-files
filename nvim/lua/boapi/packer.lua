@@ -68,6 +68,12 @@ packer.startup(function()
   --statusline
   use 'nvim-lualine/lualine.nvim'
 
+  -- highlight comments
+  use {
+    "folke/todo-comments.nvim",
+    requires = "nvim-lua/plenary.nvim",
+  }
+
   -- icons
   use {
     'kyazdani42/nvim-web-devicons',
