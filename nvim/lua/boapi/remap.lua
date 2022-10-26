@@ -43,6 +43,13 @@ nnoremap('<leader>hr', '<CMD>lua require("harpoon.mark").rm_file()<CR>') -- remo
 nnoremap('<leader>hc', '<CMD>lua require("harpoon.mark").clear_all()<CR>') -- clear all marks
 
 -- =========================================================== --
+-- switching tabs
+-- =========================================================== --
+nnoremap('<C-s>', '<CMD>SwitchTab<CR>') -- call auto command in normal mode
+inoremap('<C-s>', '<CMD>SwitchTab<CR>') -- call auto command in insert mode
+vnoremap('<C-s>', '<CMD>SwitchTab<CR>') -- call auto command in visual mode
+
+-- =========================================================== --
 -- disable arrow keys normal, visual and operator-pending mode
 -- =========================================================== --
 noremap('<up>', '<nop>')
