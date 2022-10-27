@@ -58,7 +58,6 @@ packer.startup(function()
   use 'kdheepak/lazygit.nvim'
 
   -- color theme
-  use 'folke/tokyonight.nvim'
   use {
     "catppuccin/nvim",
     as = "catppuccin",
