@@ -42,7 +42,6 @@ vim.api.nvim_create_user_command("SwitchTab", function()
     local tab_count = vim.fn.tabpagenr('$')
 
     if (input ~= nil and input <= tab_count) then
-        -- TODO: create auto command to switch to tab 1, 2, 3, 4, 5 etc.
         vim.api.nvim_cmd({ cmd = 'tabn', args = { input } }, {})
     end
 end, {})
