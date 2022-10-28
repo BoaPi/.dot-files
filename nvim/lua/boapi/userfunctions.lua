@@ -4,6 +4,9 @@ local auto_functions = require("boapi.autofunctions")
 -- RunRust
 -- runs rust code in the given buffer
 vim.api.nvim_create_user_command("RunRust", function()
+    -- TODO: automatically open a "vnew"
+    -- get bufnr
+    -- apply this to the auto function "run_main"
     local bufnr = vim.fn.input("Bufnr for main.rs output: ")
     auto_functions.run_main(tonumber(bufnr))
 end, {})
