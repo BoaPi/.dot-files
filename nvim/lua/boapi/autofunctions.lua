@@ -1,5 +1,6 @@
 -- create custom auto command to run on certain buffer interactions
-local name = "BoaPi custom auto commands"
+local M = {}
+local name = "BoaPi"
 local rust_commands = {
     run = { "cargo", "run" },
 }
@@ -27,21 +28,8 @@ local run_main = function(output_bufnr)
     })
 end
 
--- add custom user command
-vim.api.nvim_create_user_command("BoaPiRustRun", function()
-    local bufnr = vim.fn.input("Bufnr for main.rs output: ")
-    run_main(tonumber(bufnr))
-end, {})
+M = {
+    run_main = run_main
+}
 
--- auto commands for switching tabs
--- get user input
--- get current tab count
--- switch to tab if input is valid and tab present
-vim.api.nvim_create_user_command("SwitchTab", function()
-    local input = tonumber(vim.fn.getcharstr())
-    local tab_count = vim.fn.tabpagenr('$')
-
-    if (input ~= nil and input <= tab_count) then
-        vim.api.nvim_cmd({ cmd = 'tabn', args = { input } }, {})
-    end
-end, {})
+return M
