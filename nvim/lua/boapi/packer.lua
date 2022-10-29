@@ -56,6 +56,7 @@ packer.startup(function()
 
   -- git related
   use 'kdheepak/lazygit.nvim'
+  use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
   -- color theme
   use {
