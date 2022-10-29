@@ -42,6 +42,12 @@ packer.startup(function()
   use 'L3MON4D3/LuaSnip'
   use 'folke/neodev.nvim'
 
+  -- auto closing
+  use 'windwp/nvim-autopairs' -- autoclose parens, brackets, quotes, etc...
+  use {
+    'windwp/nvim-ts-autotag',
+    after = 'nvim-treesitter'
+  } -- autoclose tags
   -- telescope realted
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-lua/plenary.nvim'
