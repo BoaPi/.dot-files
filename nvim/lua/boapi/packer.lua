@@ -58,8 +58,7 @@ packer.startup(function()
   }
   use 'nvim-telescope/telescope-file-browser.nvim'
 
-  -- harpoon to mark some files
-  use 'ThePrimeagen/harpoon'
+  use 'ThePrimeagen/harpoon' -- harpoon to mark some files
 
   -- git related
   use 'kdheepak/lazygit.nvim' -- lazy git implementation in nvim
@@ -72,8 +71,7 @@ packer.startup(function()
     commit = "c9c272f8f53968473873478591bfb4f5c1418370"
   }
 
-  --statusline
-  use 'nvim-lualine/lualine.nvim'
+  use 'nvim-lualine/lualine.nvim' -- statusline
   use 'christoomey/vim-tmux-navigator' -- navigating between splitviews of tmux and vim
 
   -- highlight comments
