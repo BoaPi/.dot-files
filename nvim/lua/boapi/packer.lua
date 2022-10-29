@@ -74,6 +74,7 @@ packer.startup(function()
 
   --statusline
   use 'nvim-lualine/lualine.nvim'
+  use 'christoomey/vim-tmux-navigator' -- navigating between splitviews of tmux and vim
 
   -- highlight comments
   use {
