@@ -48,6 +48,7 @@ packer.startup(function()
     'windwp/nvim-ts-autotag',
     after = 'nvim-treesitter'
   } -- autoclose tags
+
   -- telescope realted
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-lua/plenary.nvim'
@@ -61,13 +62,13 @@ packer.startup(function()
   use 'ThePrimeagen/harpoon'
 
   -- git related
-  use 'kdheepak/lazygit.nvim'
-  use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+  use 'kdheepak/lazygit.nvim' -- lazy git implementation in nvim
+  use 'lewis6991/gitsigns.nvim' -- show line modifications on left hand side
 
   -- color theme
   use {
-    "catppuccin/nvim",
-    as = "catppuccin",
+    'catppuccin/nvim',
+    as = 'catppuccin',
     commit = "c9c272f8f53968473873478591bfb4f5c1418370"
   }
 
@@ -76,8 +77,8 @@ packer.startup(function()
 
   -- highlight comments
   use {
-    "folke/todo-comments.nvim",
-    requires = "nvim-lua/plenary.nvim",
+    'folke/todo-comments.nvim',
+    requires = 'nvim-lua/plenary.nvim',
   }
 
   -- icons
