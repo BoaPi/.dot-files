@@ -1,6 +1,10 @@
 -- import catppuccin safely
 local setup, catppuccin = pcall(require, "catppuccin")
 
+if not setup then
+	return
+end
+
 -- set cursorline but remove the complete line highlight
 -- only line number
 vim.opt.cursorline = true
