@@ -24,65 +24,71 @@ packer.init({
 packer.startup(function()
   local use = use
 
-  -- plugin manager
-  use 'wbthomason/packer.nvim'
+  -- =========================================================== --
+  -- basic plugins
+  -- =========================================================== --
+  use 'wbthomason/packer.nvim' -- to manage packer by itself
+  use 'nvim-lua/plenary.nvim' -- basic plugin for floating windows
 
-  -- treesiiter and language package
+  -- =========================================================== --
+  -- code highlighting
+  -- =========================================================== --
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
   use 'sheerun/vim-polyglot'
 
-  -- lsp configurations
+  use {
+    'folke/todo-comments.nvim',
+    requires = 'nvim-lua/plenary.nvim',
+  } -- colorful TODO: comments
+
+  -- =========================================================== --
+  -- lsp setup & auto completions
+  -- =========================================================== --
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'saadparwaiz1/cmp_luasnip'
   use 'L3MON4D3/LuaSnip'
   use 'folke/neodev.nvim'
-
-  -- auto closing
   use 'windwp/nvim-autopairs' -- autoclose parens, brackets, quotes, etc...
   use {
     'windwp/nvim-ts-autotag',
     after = 'nvim-treesitter'
   } -- autoclose tags
 
-  -- telescope realted
+  -- =========================================================== --
+  -- file navigation
+  -- =========================================================== --
   use 'nvim-telescope/telescope.nvim'
-  use 'nvim-lua/plenary.nvim'
   use {
     'nvim-telescope/telescope-fzf-native.nvim',
     run = 'make'
   }
+  use 'ThePrimeagen/harpoon' -- to mark some files
 
-  use 'ThePrimeagen/harpoon' -- harpoon to mark some files
-
+  -- =========================================================== --
   -- git related
+  -- =========================================================== --
   use 'kdheepak/lazygit.nvim' -- lazy git implementation in nvim
   use 'lewis6991/gitsigns.nvim' -- show line modifications on left hand side
 
+  -- =========================================================== --
+  -- visual things
+  -- =========================================================== --
   -- color theme
   use {
     'catppuccin/nvim',
     as = 'catppuccin',
   }
-
-  use 'nvim-lualine/lualine.nvim' -- statusline
-  use 'christoomey/vim-tmux-navigator' -- navigating between splitviews of tmux and vim
-
-  -- highlight comments
-  use {
-    'folke/todo-comments.nvim',
-    requires = 'nvim-lua/plenary.nvim',
-  }
-
   -- icons
   use {
     'kyazdani42/nvim-web-devicons',
     opt = true
   }
-
+  use 'nvim-lualine/lualine.nvim' -- statusline
+  use 'christoomey/vim-tmux-navigator' -- navigating between splitviews of tmux and vim
 end
 )
