@@ -36,6 +36,9 @@ configs.setup {
   },
   highlight = {
     enable = true,
+  },
+  -- Indentation based on treesitter for the = operator
+  indent = {
+    enable = true,
   }
 }
-
