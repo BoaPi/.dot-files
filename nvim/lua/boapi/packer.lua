@@ -68,7 +68,6 @@ packer.startup(function()
   use {
     'catppuccin/nvim',
     as = 'catppuccin',
-    commit = "c9c272f8f53968473873478591bfb4f5c1418370"
   }
 
   use 'nvim-lualine/lualine.nvim' -- statusline
