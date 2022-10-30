@@ -1,12 +1,9 @@
--- setup telescope
-local telescope = require('telescope')
-telescope.setup {
-	extensions = {
-		file_browser = {
-			hidden = true,
-		},
-	},
-}
+-- import telescope safely
+local setup, telescope = pcall(require, "telescope")
 
--- load extensions
-telescope.load_extension("file_browser")
+if not setup then
+	return
+end
+
+-- setup telescope
+telescope.setup {}
