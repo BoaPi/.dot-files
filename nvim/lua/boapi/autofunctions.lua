@@ -29,6 +29,18 @@ local run_main = function(output_bufnr)
     })
 end
 
+-- add lsp format on save
+-- will not be exported and instead registered all the time
+local format_on_save = function()
+    vim.api.nvim_create_autocmd("BufWritePre", {
+        group = vim.api.nvim_create_augroup(name, { clear = true }),
+        callback = function()
+            vim.lsp.buf.format()
+        end
+    })
+end
+format_on_save()
+
 M = {
     run_main = run_main
 }
