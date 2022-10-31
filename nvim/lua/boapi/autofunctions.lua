@@ -1,6 +1,7 @@
 -- create custom auto command to run on certain buffer interactions
 local M = {}
 local name = "BoaPi"
+local output_head = "output of main.rs"
 local rust_commands = {
     run = { "cargo", "run" },
 }
@@ -18,7 +19,7 @@ local run_main = function(output_bufnr)
                 end
             end
 
-            vim.api.nvim_buf_set_lines(output_bufnr, 0, -1, false, { "output of main.rs" })
+            vim.api.nvim_buf_set_lines(output_bufnr, 0, -1, false, { output_head })
             vim.fn.jobstart(rust_commands["run"], {
                 stdout_buffered = true,
                 on_stdout = append_data,
