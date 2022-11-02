@@ -12,7 +12,6 @@ this commands are only examples and needs to be adjusted, if the directory struc
   - NVIM - `ln -s ~/.dot-files/nvim`
   - alacritty - `ln -s ~/.dot-files/alacritty/.alacritty.yml`
   - tmux - `ln -s ~/.dot-files/tmux/.tmux.conf`
-  - tmuxinator - `ln -s ~/.dot-files/tmux/tmuxinator`
 
 ## dev setup
 
