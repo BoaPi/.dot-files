@@ -13,7 +13,7 @@ vim.api.nvim_create_augroup(name, { clear = true })
 -- getting both outputs from stdout and stderr
 local run_main = function(output_bufnr)
     vim.api.nvim_create_autocmd("BufWritePost", {
-        group = vim.api.nvim_create_augroup(name, { clear = true }),
+        group = name,
         pattern = "main.rs",
         callback = function()
             local append_data = function(_, data)
@@ -35,7 +35,7 @@ end
 -- add lsp format on save
 -- will not be exported and instead registered all the time
 vim.api.nvim_create_autocmd("BufWritePre", {
-    group = vim.api.nvim_create_augroup(name, { clear = true }),
+    group = name,
     callback = function()
         vim.lsp.buf.format()
     end
