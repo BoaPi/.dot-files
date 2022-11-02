@@ -6,6 +6,9 @@ local rust_commands = {
     run = { "cargo", "run" },
 }
 
+-- create auto command group for all custom commands
+vim.api.nvim_create_augroup(name, { clear = true })
+
 -- run "cargo run" after writing to stdout_buffer
 -- getting both outputs from stdout and stderr
 local run_main = function(output_bufnr)
