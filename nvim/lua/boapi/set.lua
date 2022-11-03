@@ -3,7 +3,7 @@ vim.g.mapleader = " " -- new prefix key
 
 -- line number options
 vim.opt.nu = true -- show current line number where the cursor is
-vim.opt.relativenumber = true -- adding relativ line numbers to where the cursor is
+vim.opt.relativenumber = true -- adding relative line numbers to where the cursor is
 
 -- cursor options
 vim.opt.guicursor = "" -- set cursor to be fat
