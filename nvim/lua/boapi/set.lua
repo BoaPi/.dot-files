@@ -29,3 +29,7 @@ vim.opt.scrolloff = 20 -- set minimum number of lines, where scrolling starts
 
 -- netrw options
 vim.g.netrw_liststyle = 3 -- set list style to tree
+
+-- set spell options
+vim.opt.spell = true
+vim.opt.spelllang = "en_us"
