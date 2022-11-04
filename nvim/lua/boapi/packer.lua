@@ -38,11 +38,7 @@ packer.startup(function()
     run = ':TSUpdate'
   }
   use 'sheerun/vim-polyglot'
-
-  use {
-    'folke/todo-comments.nvim',
-    requires = 'nvim-lua/plenary.nvim',
-  } -- colorful TODO: comments
+  use 'folke/todo-comments.nvim' -- colorful TODO: comments
 
   -- =========================================================== --
   -- lsp setup & auto completions
