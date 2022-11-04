@@ -25,10 +25,11 @@ packer.startup(function()
   local use = use
 
   -- =========================================================== --
-  -- basic plugins
+  -- essential plugins
   -- =========================================================== --
   use 'wbthomason/packer.nvim' -- to manage packer by itself
   use 'nvim-lua/plenary.nvim' -- basic plugin for floating windows
+  -- TODO: enable plugin  use("kylechui/nvim-surround") -- add, delete, change surroundings
 
   -- =========================================================== --
   -- code highlighting
@@ -43,12 +44,26 @@ packer.startup(function()
   -- =========================================================== --
   -- lsp setup & auto completions
   -- =========================================================== --
-  use 'neovim/nvim-lspconfig'
-  use 'hrsh7th/nvim-cmp'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'saadparwaiz1/cmp_luasnip'
+  use 'hrsh7th/nvim-cmp' -- auto completion plugin
+
+  -- managing & installing lsp servers, linters & formatters
+  use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
+  use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
+
+  -- formatting & linting
+  use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
+  use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
+
+  -- snippets
   use 'L3MON4D3/LuaSnip'
-  use 'folke/neodev.nvim'
+  use 'saadparwaiz1/cmp_luasnip'
+
+  -- configuring lsp servers
+  use 'neovim/nvim-lspconfig' -- easily configure language servers
+  use 'hrsh7th/cmp-nvim-lsp' -- for autocompletion
+  use 'folke/neodev.nvim' -- lsp for nvim lua API
+
+  -- auto closing
   use 'windwp/nvim-autopairs' -- autoclose parens, brackets, quotes, etc...
   use {
     'windwp/nvim-ts-autotag',
