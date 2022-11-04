@@ -1,5 +1,5 @@
 -- setup
-local neodev = require('neodev').setup({})
+require('neodev').setup({})
 local lspconfig = require 'lspconfig'
 local cmp = require 'cmp'
 local luasnip = require 'luasnip'
