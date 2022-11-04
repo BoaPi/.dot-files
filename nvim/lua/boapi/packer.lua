@@ -61,6 +61,7 @@ packer.startup(function()
   -- configuring lsp servers
   use 'neovim/nvim-lspconfig' -- easily configure language servers
   use 'hrsh7th/cmp-nvim-lsp' -- for autocompletion
+  use { "glepnir/lspsaga.nvim", branch = "main" } -- enhanced lsp uis
   use 'folke/neodev.nvim' -- lsp for nvim lua API
 
   -- auto closing
