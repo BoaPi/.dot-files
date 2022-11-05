@@ -39,3 +39,16 @@ null_ls.setup({
     end
   end,
 })
+
+-- add lsp format on save
+-- will not be exported and instead registered all the time
+vim.api.nvim_create_autocmd("BufWritePre", {
+  group = name,
+  callback = function()
+    vim.lsp.buf.format({
+      filter = function(client)
+        return client.name ~= "null_ls"
+      end,
+    })
+  end,
+})
