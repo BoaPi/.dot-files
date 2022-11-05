@@ -61,6 +61,7 @@ packer.startup(function()
   use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced lsp uis
   use("folke/neodev.nvim") -- lsp for nvim lua API
   -- TODO: use 'simrat39/rust-tools.nvim' -- more complete rust tooling
+  -- https://sharksforarms.dev/posts/neovim-rust/
 
   -- NOTE: auto closing
   use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
