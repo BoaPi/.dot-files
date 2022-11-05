@@ -1,5 +1,5 @@
 -- setup
-require('neodev').setup({})
+require("neodev").setup({})
 
 -- import lspconfig plugin safely
 local lspconfig_status, lspconfig = pcall(require, "lspconfig")
@@ -25,34 +25,34 @@ local on_attach = function(_, bufnr)
   -- to the buffers which needs them, e.g.
   -- rust-tool mappings only for the rust-lsp
   local bufopts = { noremap = true, silent = true, buffer = bufnr }
-  vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
-  vim.keymap.set('n', '<leader>f', vim.lsp.buf.format, bufopts)
+  vim.keymap.set("n", "K", vim.lsp.buf.hover, bufopts)
+  vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, bufopts)
 end
 
 -- different language servers
 -- rust
-lspconfig.rust_analyzer.setup {
+lspconfig.rust_analyzer.setup({
   on_attach = on_attach,
   capabilities = capabilities,
-}
+})
 
 -- lua
-lspconfig.sumneko_lua.setup {
+lspconfig.sumneko_lua.setup({
   on_attach = on_attach,
   capabilities = capabilities,
   settings = {
     Lua = {
       runtime = {
         -- used Lua version
-        version = 'LuaJIT',
+        version = "LuaJIT",
       },
       completion = {
-        callSnipper = 'Replace'
+        callSnipper = "Replace",
       },
       diagnostics = {
         -- Get the language server to recognize the `vim` global
-        globals = { 'vim' },
+        globals = { "vim" },
       },
-    }
-  }
-}
+    },
+  },
+})

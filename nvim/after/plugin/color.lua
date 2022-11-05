@@ -2,7 +2,7 @@
 local setup, catppuccin = pcall(require, "catppuccin")
 
 if not setup then
-	return
+  return
 end
 
 -- set cursorline but remove the complete line highlight
@@ -12,6 +12,6 @@ vim.opt.cursorlineopt = "number"
 
 -- setup theme catppuccin
 catppuccin.setup({
-	flavour = "mocha"
+  flavour = "mocha",
 })
 vim.api.nvim_command("colorscheme catppuccin")

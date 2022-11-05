@@ -2,8 +2,8 @@
 local setup, telescope = pcall(require, "telescope")
 
 if not setup then
-	return
+  return
 end
 
 -- setup telescope
-telescope.setup {}
+telescope.setup({})

@@ -7,7 +7,7 @@ end
 
 -- setup treesitter for all listed languages
 -- and enabling highlighting
-configs.setup {
+configs.setup({
   ensure_installed = {
     "bash",
     "css",
@@ -32,7 +32,7 @@ configs.setup {
     "toml",
     "tsx",
     "typescript",
-    "yaml"
+    "yaml",
   },
   highlight = {
     enable = true,
@@ -40,5 +40,5 @@ configs.setup {
   -- Indentation based on treesitter for the = operator
   indent = {
     enable = true,
-  }
-}
+  },
+})
