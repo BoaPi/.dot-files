@@ -16,10 +16,14 @@ end
 -- Add additional capabilities supported by nvim-cmp
 local capabilities = cmp_nvim_lsp.default_capabilities()
 
--- enable completions
+-- NOTE: on_attach()
+-- will enable listed key mappings only when an lsp is attached
+-- to the buffer
 local on_attach = function(_, bufnr)
-  -- Mappings.
-  -- See `:help vim.lsp.*` for documentation on any of the below functions
+  -- NOTE: plugins like rust-tools, mason, Lspsaga & null-ls
+  -- will bring custom functions with them. In here we can attach them
+  -- to the buffers which needs them, e.g.
+  -- rust-tool mappings only for the rust-lsp
   local bufopts = { noremap = true, silent = true, buffer = bufnr }
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
   vim.keymap.set('n', '<leader>f', vim.lsp.buf.format, bufopts)
