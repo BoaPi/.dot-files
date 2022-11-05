@@ -44,12 +44,12 @@ packer.startup(function()
   use 'hrsh7th/nvim-cmp' -- auto completion plugin
 
   -- NOTE: managing & installing lsp servers, linters & formatters
-  use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
-  use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
+  use 'williamboman/mason.nvim' -- in charge of managing lsp servers, linters & formatters
+  use 'williamboman/mason-lspconfig.nvim' -- bridges gap b/w mason & lspconfig
+  use 'jayp0521/mason-null-ls.nvim' -- enables managing of linter & formatters in mason
 
   -- NOTE: formatting & linting
-  use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
-  use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
+  use 'jose-elias-alvarez/null-ls.nvim' -- configure formatters & linters
 
   -- NOTE: snippets
   use 'L3MON4D3/LuaSnip'
@@ -89,7 +89,6 @@ packer.startup(function()
     'catppuccin/nvim',
     as = 'catppuccin',
   } -- color theme
-  use {
   use {
     'kyazdani42/nvim-web-devicons',
     opt = true
