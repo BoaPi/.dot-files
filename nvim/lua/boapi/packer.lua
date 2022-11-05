@@ -24,15 +24,13 @@ packer.init({
 packer.startup(function()
   local use = use
 
-  -- =========================================================== --
-  -- essential plugins
+  -- NOTE: essential plugins
   -- =========================================================== --
   use 'wbthomason/packer.nvim' -- to manage packer by itself
   use 'nvim-lua/plenary.nvim' -- basic plugin for floating windows
   -- TODO: enable plugin  use("kylechui/nvim-surround") -- add, delete, change surroundings
 
-  -- =========================================================== --
-  -- code highlighting
+  -- NOTE: code highlighting
   -- =========================================================== --
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -41,38 +39,37 @@ packer.startup(function()
   use 'sheerun/vim-polyglot'
   use 'folke/todo-comments.nvim' -- colorful TODO: comments
 
-  -- =========================================================== --
-  -- lsp setup & auto completions
+  -- NOTE: lsp setup & auto completions
   -- =========================================================== --
   use 'hrsh7th/nvim-cmp' -- auto completion plugin
 
-  -- managing & installing lsp servers, linters & formatters
+  -- NOTE: managing & installing lsp servers, linters & formatters
   use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
   use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
 
-  -- formatting & linting
+  -- NOTE: formatting & linting
   use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
   use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 
-  -- snippets
+  -- NOTE: snippets
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
 
-  -- configuring lsp servers
+  -- NOTE: configuring lsp servers
   use 'neovim/nvim-lspconfig' -- easily configure language servers
   use 'hrsh7th/cmp-nvim-lsp' -- for autocompletion
   use { "glepnir/lspsaga.nvim", branch = "main" } -- enhanced lsp uis
   use 'folke/neodev.nvim' -- lsp for nvim lua API
+  -- TODO: use 'simrat39/rust-tools.nvim' -- more complete rust tooling
 
-  -- auto closing
+  -- NOTE: auto closing
   use 'windwp/nvim-autopairs' -- autoclose parens, brackets, quotes, etc...
   use {
     'windwp/nvim-ts-autotag',
     after = 'nvim-treesitter'
   } -- autoclose tags
 
-  -- =========================================================== --
-  -- file navigation
+  -- NOTE: file navigation
   -- =========================================================== --
   use 'nvim-telescope/telescope.nvim'
   use {
@@ -81,25 +78,22 @@ packer.startup(function()
   }
   use 'ThePrimeagen/harpoon' -- to mark some files
 
-  -- =========================================================== --
-  -- git related
+  -- NOTE: git related
   -- =========================================================== --
   use 'kdheepak/lazygit.nvim' -- lazy git implementation in nvim
   use 'lewis6991/gitsigns.nvim' -- show line modifications on left hand side
 
+  -- NOTE: visual things
   -- =========================================================== --
-  -- visual things
-  -- =========================================================== --
-  -- color theme
   use {
     'catppuccin/nvim',
     as = 'catppuccin',
-  }
-  -- icons
+  } -- color theme
+  use {
   use {
     'kyazdani42/nvim-web-devicons',
     opt = true
-  }
+  } -- icons
   use 'nvim-lualine/lualine.nvim' -- statusline
   use 'christoomey/vim-tmux-navigator' -- navigating between splitviews of tmux and vim
 end
