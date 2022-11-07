@@ -18,7 +18,7 @@ vim.opt.smartindent = true
 -- line options
 vim.opt.wrap = false -- prevent line wrapping
 vim.opt.colorcolumn = "80" -- highlight column 80 for not to long lines
-vim.opt.signcolumn = "yes:2"
+vim.opt.signcolumn = "yes"
 
 -- window options
 vim.opt.laststatus = 3 -- set status bar to only appear once for all split views
