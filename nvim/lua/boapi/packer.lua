@@ -95,5 +95,4 @@ packer.startup(function()
     opt = true,
   }) -- icons
   use("nvim-lualine/lualine.nvim") -- statusline
-  use("christoomey/vim-tmux-navigator") -- navigating between splitviews of tmux and vim
 end)
