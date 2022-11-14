@@ -19,6 +19,13 @@ vnoremap("<C-j>", ":m '>+1<CR>gv=gv") -- move line down by one
 vnoremap("<C-k>", ":m '<-2<CR>gv=gv") -- move line up by one
 
 -- =========================================================== --
+-- adjust default movements
+-- =========================================================== --
+nnoremap("<C-u>", "<C-u>zz") -- move line down by one
+nnoremap("<C-d>", "<C-d>zz") -- move line up by one
+nnoremap("n", "nzz") -- move line down by one
+
+-- =========================================================== --
 -- telescope quick actions
 -- =========================================================== --
 nnoremap("<leader>ff", "<CMD>Telescope find_files<CR>")
