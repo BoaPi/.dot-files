@@ -42,3 +42,6 @@ configs.setup({
     enable = true,
   },
 })
+
+-- adjust highlight to capture groups
+vim.api.nvim_set_hl(0, "@text.todo", {})
