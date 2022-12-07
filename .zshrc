@@ -19,9 +19,6 @@ export PATH="$PNPM_HOME:$PATH"
 # editor
 export EDITOR='nvim'
 
-# theme
-ZSH_THEME="bira"
-
 # plug-ins
 plugins=(
   z
@@ -81,3 +78,5 @@ load-nvmrc() {
 
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
+
+eval "$(starship init zsh)"
