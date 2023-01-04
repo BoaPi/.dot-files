@@ -15,7 +15,7 @@ this commands are only examples and needs to be adjusted, if the directory struc
 
 ## dev setup
 
-| Tool       | Description                               | Plugins                                                                                                                                                     |
+| Tool       | Description                               | more info                                                                                                                                                     |
 | ---------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | catppuccin | overall theme for vim, alacritty and tmux |                                                                                                                                                             |
 | neovim     | used editor                               |                                                                                                                                                             |
@@ -23,7 +23,7 @@ this commands are only examples and needs to be adjusted, if the directory struc
 | starship   | used prompt for the shell                 |                                                                                                                                                             |
 | tmux       | used terminal multiplexer                 |                                                                                                                                                             |
 | tmp        | tmux package manager                      |                                                                                                                                                             |
-| NerdFont   | used as font in alacritty & tmux          | [NerdFonts](https://www.nerdfonts.com/cheat-sheet)                                                                                                          |
+| NerdFont   | used as font in alacritty & tmux          | [NerdFonts](https://www.nerdfonts.com/cheat-sheet) can be installed via `brew`                                                                                                         |
 | LazyGit    | used git cmd tool                         |                                                                                                                                                             |
 | LazyDocker | used docker cmd tool                      |                                                                                                                                                             |
 | zsh        | used shell                                | `oh-my-szh`, `zsh-nvm`, `zsh-syntax-highlighting`, `zsh-autosuggestions`, `z`, [Powerline Fonts](https://github.com/powerline/fonts), [Profile](boapi.json) |
