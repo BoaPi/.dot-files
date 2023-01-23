@@ -50,6 +50,15 @@ nnoremap("<leader>hr", '<CMD>lua require("harpoon.mark").rm_file()<CR>') -- remo
 nnoremap("<leader>hc", '<CMD>lua require("harpoon.mark").clear_all()<CR>') -- clear all marks
 
 -- =========================================================== --
+-- Lsp Saga actions
+-- =========================================================== --
+nnoremap("<leader>ca", "<CMD>Lspsaga code_action<CR>") -- open code action menu if available
+vnoremap("<leader>ca", "<CMD>Lspsaga code_action<CR>") -- open code action menu if available
+nnoremap("pd", "<cmd>Lspsaga peek_definition<CR>") -- show definition in floating window
+nnoremap("gd", "<cmd>Lspsaga goto_definition<CR>") -- show definition in floating window
+nnoremap("<leader>o", "<cmd>Lspsaga outline<CR>") -- show outline window
+
+-- =========================================================== --
 -- switching tabs
 -- =========================================================== --
 nnoremap("<C-s>", "<CMD>SwitchTab<CR>") -- call auto command in normal mode
