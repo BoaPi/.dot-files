@@ -56,3 +56,11 @@ lspconfig.sumneko_lua.setup({
     },
   },
 })
+
+-- deno / ts
+lspconfig.denols.setup({
+  on_attach = on_attach,
+  init_options = {
+    lint = true,
+  },
+})
