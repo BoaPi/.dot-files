@@ -83,6 +83,7 @@ packer.startup(function()
   -- =========================================================== --
   use("kdheepak/lazygit.nvim") -- lazy git implementation in nvim
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+  use("mbbill/undotree") -- show undo tree on the site
 
   -- NOTE: visual things
   -- =========================================================== --
