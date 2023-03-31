@@ -37,7 +37,7 @@ lspconfig.rust_analyzer.setup({
 })
 
 -- lua
-lspconfig.sumneko_lua.setup({
+lspconfig.lua_ls.setup({
   on_attach = on_attach,
   capabilities = capabilities,
   settings = {
@@ -52,6 +52,9 @@ lspconfig.sumneko_lua.setup({
       diagnostics = {
         -- Get the language server to recognize the `vim` global
         globals = { "vim" },
+      },
+      workspace = {
+        checkThirdParty = false,
       },
     },
   },
