@@ -42,6 +42,11 @@ nnoremap("<leader>tt", "<CMD>TodoTelescope<CR>")
 nnoremap("<leader>gg", "<CMD>LazyGit<CR>") -- open LazyGit
 
 -- =========================================================== --
+-- Undo-tree quick actions
+-- =========================================================== --
+nnoremap("<leader>t", "<CMD>UndotreeShow<CR><CMD>UndotreeFocus<CR>") -- open undo-tree panel
+
+-- =========================================================== --
 -- Harpoon quick actions
 -- =========================================================== --
 nnoremap("<leader>hh", '<CMD>lua require("harpoon.ui").toggle_quick_menu()<CR>') -- open menu
