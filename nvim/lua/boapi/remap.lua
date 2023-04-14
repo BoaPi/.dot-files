@@ -4,9 +4,10 @@ local vnoremap = require("boapi.keymap").vnoremap
 local noremap = require("boapi.keymap").noremap
 
 -- =========================================================== --
--- quick access of netrw
+-- general
 -- =========================================================== --
-nnoremap("<leader>jk", "<CMD>Ex<CR>")
+nnoremap("<leader>jk", "<CMD>Ex<CR>") -- quick access for netrw
+nnoremap("<leader>nh", "<CMD>noh<CR>") -- remove highlighting from last search
 
 -- =========================================================== --
 -- moving lines quick actions
