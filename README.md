@@ -29,3 +29,10 @@ this commands are only examples and needs to be adjusted, if the directory struc
 | nvm        | manager for different node version        |                                                                                                                                                             |
 | raycast    | alternative for spotlight                 |                                                                                                                                                             |
 | ripgrep    | rust written grep alternative             |                                                                                                                                                             |
+
+## extensions to look into
+
+* [zoxide](https://github.com/ajeetdsouza/zoxide)
+* [bat](https://github.com/sharkdp/bat)
+* [lsd](https://github.com/lsd-rs/lsd)
+* [crates]9https://github.com/Saecki/crates.nvim)
