@@ -35,6 +35,7 @@ nnoremap("<leader>gc", "<CMD>Telescope git_commits<CR>")
 nnoremap("<leader>ts", "<CMD>Telescope treesitter<CR>")
 nnoremap("<leader>fb", "<CMD>Telescope file_browser<CR>")
 nnoremap("<leader>gs", "<CMD>Telescope grep_string<CR>")
+nnoremap("<leader>lg", "<CMD>Telescope live_grep<CR>")
 nnoremap("<leader>tt", "<CMD>TodoTelescope<CR>")
 
 -- =========================================================== --
