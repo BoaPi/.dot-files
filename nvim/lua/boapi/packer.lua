@@ -36,6 +36,7 @@ packer.startup(function()
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   })
+  use("nvim-treesitter/playground") -- playground for treesitter to see tokens
   use("sheerun/vim-polyglot")
   use("folke/todo-comments.nvim") -- colorful TODO: comments
 
