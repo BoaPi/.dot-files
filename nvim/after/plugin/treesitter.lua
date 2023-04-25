@@ -1,7 +1,12 @@
 -- import nvm-treesitter safely
-local setup, configs = pcall(require, "nvim-treesitter.configs")
+local treesitter_status, configs = pcall(require, "nvim-treesitter.configs")
+local treesitter_playground_status, treesitter_playground = pcall(require, "nvim-treesitter/playground")
 
-if not setup then
+if not treesitter_status then
+  return
+end
+
+if not treesitter_playground_status then
   return
 end
 
@@ -25,6 +30,7 @@ configs.setup({
     "make",
     "markdown",
     "markdown_inline",
+    "query",
     "regex",
     "rust",
     "scss",
