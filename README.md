@@ -36,3 +36,9 @@ this commands are only examples and needs to be adjusted, if the directory struc
 * [bat](https://github.com/sharkdp/bat)
 * [lsd](https://github.com/lsd-rs/lsd)
 * [crates]9https://github.com/Saecki/crates.nvim)
+
+## Next Steps
+
+* [ ] move config to [lazy.nvim](https://github.com/folke/lazy.nvim)
+* [ ] look through [setup](https://www.youtube.com/watch?v=J9yqSdvAKXY)
+* [ ] look through [.dot-files](https://github.com/cpow/cpow-dotfiles)
