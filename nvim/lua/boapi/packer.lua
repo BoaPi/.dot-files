@@ -24,6 +24,10 @@ packer.init({
 packer.startup(function()
   local use = use
 
+  -- NOTE: own plugins
+  -- =========================================================== --
+  use("~/Documents/projects/task-toggler.nvim")
+
   -- NOTE: essential plugins
   -- =========================================================== --
   use("wbthomason/packer.nvim") -- to manage packer by itself
