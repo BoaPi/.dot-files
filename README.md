@@ -35,7 +35,8 @@ this commands are only examples and needs to be adjusted, if the directory struc
 * [zoxide](https://github.com/ajeetdsouza/zoxide)
 * [bat](https://github.com/sharkdp/bat)
 * [lsd](https://github.com/lsd-rs/lsd)
-* [crates]9https://github.com/Saecki/crates.nvim)
+* [crates](https://github.com/Saecki/crates.nvim)
+* [oil.nvim](https://github.com/stevearc/oil.nvim)
 
 ## Next Steps
 
