@@ -67,3 +67,12 @@ lspconfig.denols.setup({
     lint = true,
   },
 })
+
+-- ts only
+lspconfig.tsserver.setup({})
+
+-- cssls
+lspconfig.cssls.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})
