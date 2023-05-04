@@ -44,3 +44,4 @@ this commands are only examples and needs to be adjusted, if the directory struc
 * [ ] move config to [lazy.nvim](https://github.com/folke/lazy.nvim)
 * [ ] look through [setup](https://www.youtube.com/watch?v=J9yqSdvAKXY)
 * [ ] look through [.dot-files](https://github.com/cpow/cpow-dotfiles)
+* [ ] look through [primeagen](https://github.com/ThePrimeagen/init.lua/tree/master)
