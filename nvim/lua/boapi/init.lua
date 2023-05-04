@@ -1,5 +1,5 @@
 require("boapi.set")
 require("boapi.remap")
-require("boapi.packer")
+require("boapi.lazy")
 require("boapi.autofunctions")
 require("boapi.userfunctions")
