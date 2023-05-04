@@ -28,7 +28,7 @@ mason_lspconfig.setup({
     "html",
     "lua_ls",
     "rust_analyzer",
-    "stylelint-lsp",
+    "stylelint_lsp",
     "tsserver",
   },
   -- auto-install configured servers (with lspconfig)
