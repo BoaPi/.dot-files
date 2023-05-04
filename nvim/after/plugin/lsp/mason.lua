@@ -24,6 +24,7 @@ mason_lspconfig.setup({
   ensure_installed = {
     "html",
     "cssls",
+    "eslint",
     "rust_analyzer",
     "lua_ls",
   },
