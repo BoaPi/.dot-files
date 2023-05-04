@@ -41,7 +41,7 @@ this commands are only examples and needs to be adjusted, if the directory struc
 
 ## Next Steps
 
-* [ ] move config to [lazy.nvim](https://github.com/folke/lazy.nvim)
-* [ ] look through [setup](https://www.youtube.com/watch?v=J9yqSdvAKXY)
-* [ ] look through [.dot-files](https://github.com/cpow/cpow-dotfiles)
-* [ ] look through [primeagen](https://github.com/ThePrimeagen/init.lua/tree/master)
+* [setup](https://www.youtube.com/watch?v=J9yqSdvAKXY)
+* [.dot-files](https://github.com/cpow/cpow-dotfiles)
+* [primeagen](https://github.com/ThePrimeagen/init.lua/tree/master)
+* [zero-lsp](https://github.com/VonHeikemen/lsp-zero.nvim)
