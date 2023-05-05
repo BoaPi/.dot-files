@@ -66,10 +66,14 @@ lspconfig.denols.setup({
   init_options = {
     lint = true,
   },
+  single_file_support = false,
 })
 
--- ts only
-lspconfig.tsserver.setup({})
+if vim.fs.dirname(vim.fs.find({ "deno.json" }, { upward = true })[1]) == nil then
+  -- ts only
+  lspconfig.tsserver.setup({})
+end
+
 
 -- cssls
 lspconfig.cssls.setup({
