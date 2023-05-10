@@ -26,6 +26,7 @@ mason_lspconfig.setup({
     "denols",
     "eslint",
     "html",
+    "jsonls",
     "lua_ls",
     "rust_analyzer",
     "stylelint_lsp",
@@ -38,8 +39,10 @@ mason_lspconfig.setup({
 mason_null_ls.setup({
   -- list of formatters & linters for mason to install
   ensure_installed = {
+    "eslint_d", -- for all projects using eslint
+    "prettierd", -- for all project using not eslint
     "stylua", -- lua formatter
-    "stylelint",
+    "stylelint", -- css linter
   },
   -- auto-install configured formatters & linters (with null-ls)
   automatic_installation = true,
