@@ -18,6 +18,7 @@ configs.setup({
     "http",
     "javascript",
     "json",
+    "jsonc",
     "lua",
     "make",
     "markdown",

@@ -4,6 +4,22 @@ if not setup then
   return
 end
 
+-- frontend related setups
+-- checks if the current folder is part of a deno project
+function is_deno_project()
+  -- look for root folder, therefor look for .git folder
+  local root_folder = vim.fs.dirname(vim.fs.find({ ".git" }, { upward = true })[1])
+  -- look in root folder for deno.json
+  local deno = vim.fs.find({ "deno.json" }, { path = root_folder })[1]
+
+  -- return root folder path of deno project
+  if deno then
+    return root_folder
+  else
+    return nil
+  end
+end
+
 -- for conciseness
 local formatting = null_ls.builtins.formatting -- to setup formatters
 -- local diagnostics = null_ls.builtins.diagnostics -- to setup linters

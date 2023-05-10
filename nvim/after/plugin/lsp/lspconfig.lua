@@ -62,22 +62,27 @@ lspconfig.lua_ls.setup({
   },
 })
 
--- deno / typescript lsps
--- only attach one lsp to a project
-local isDenoProject = vim.fs.dirname(vim.fs.find({ "deno.json" }, { upward = true })[1])
-if isDenoProject then
-  -- deno
-  lspconfig.denols.setup({
-    on_attach = on_attach,
-    init_options = {
-      lint = true,
+--JSON
+lspconfig.jsonls.setup({
+  settings = {
+    json = {
+      schemas = require("schemastore").json.schemas(),
+      validate = { enable = true },
     },
-    single_file_support = false,
-  })
-else
-  -- typescript
-  lspconfig.tsserver.setup({})
-end
+  },
+})
+
+-- deno / typescript lsps
+-- deno
+lspconfig.denols.setup({
+  on_attach = on_attach,
+  init_options = {
+    lint = true,
+  },
+  single_file_support = false,
+})
+-- typescript
+lspconfig.tsserver.setup({})
 
 -- cssls
 lspconfig.cssls.setup({
