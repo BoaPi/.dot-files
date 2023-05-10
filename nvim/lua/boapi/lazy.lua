@@ -14,7 +14,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-    
+
   -- own plugins
   --  use("~/Documents/projects/task-toggler.nvim")
 
@@ -32,6 +32,7 @@ local plugins = {
   "nvim-treesitter/playground", -- playground for treesitter to see tokens
   "sheerun/vim-polyglot", -- vim API
   "folke/todo-comments.nvim", -- colorful TODO: comments
+  "b0o/schemastore.nvim", -- JSON schema
 
   -- lsp setup & auto completions
   -- =========================================================== --
@@ -53,8 +54,8 @@ local plugins = {
   "neovim/nvim-lspconfig", -- easily configure language servers
   "hrsh7th/cmp-nvim-lsp", -- for autocompletion
   {
-      "glepnir/lspsaga.nvim",
-      branch = "main"
+    "glepnir/lspsaga.nvim",
+    branch = "main",
   }, -- enhanced lsp uisualisation
   "folke/neodev.nvim", -- lsp for nvim lua API
   -- TODO: use 'simrat39/rust-tools.nvim' -- more complete rust tooling
