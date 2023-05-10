@@ -14,7 +14,9 @@ if not cmp_nvim_lsp_status then
 end
 
 -- Add additional capabilities supported by nvim-cmp
-local capabilities = cmp_nvim_lsp.default_capabilities()
+local client_capabilities = vim.lsp.protocol.make_client_capabilities()
+local capabilities =
+  vim.tbl_deep_extend("force", client_capabilities, cmp_nvim_lsp.default_capabilities(client_capabilities))
 
 -- NOTE: on_attach()
 -- will enable listed key mappings only when an lsp is attached
