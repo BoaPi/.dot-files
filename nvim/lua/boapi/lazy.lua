@@ -20,6 +20,9 @@ local plugins = {
     dir = "~/Documents/projects/task-toggler.nvim",
   },
 
+  -- own plugins from github
+  -- "BoaPi/task-toggler.nvim",
+
   -- essential plugins
   -- =========================================================== --
   "nvim-lua/plenary.nvim", -- basic plugin for floating windows
