@@ -15,8 +15,10 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
 
-  -- own plugins
-  --  use("~/Documents/projects/task-toggler.nvim")
+  -- own plugins for development
+  {
+    dir = "~/Documents/projects/task-toggler.nvim",
+  },
 
   -- essential plugins
   -- =========================================================== --
