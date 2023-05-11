@@ -20,11 +20,11 @@ function isDenoProject()
   end
 end
 
--- checks if the current folder is pat of an eslint project
+-- checks if the current folder is part of an eslint project
 function isEslintProject()
   -- look for root folder, therefor look for .git folder
   local root_folder = vim.fs.dirname(vim.fs.find({ ".git" }, { upward = true })[1])
-  -- look in root folder for deno.json
+  -- look in root folder for eslint config files
   local eslint = vim.fs.find({
     ".eslintrc.js",
     ".eslintrc.cjs",
@@ -32,8 +32,7 @@ function isEslintProject()
     ".eslintrc.yml",
     ".eslintrc.json",
   }, { path = root_folder })[1]
-  -- return root folder path of deno project
-  print(eslint)
+  -- return root folder path of eslint project
   if eslint then
     return root_folder
   else
