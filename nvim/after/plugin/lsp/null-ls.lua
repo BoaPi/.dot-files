@@ -6,7 +6,7 @@ end
 
 -- frontend related setups
 -- checks if the current folder is part of a deno project
-function isDenoProject()
+function is_deno_project()
   -- look for root folder, therefor look for .git folder
   local root_folder = vim.fs.dirname(vim.fs.find({ ".git" }, { upward = true })[1])
   -- look in root folder for deno.json
@@ -21,7 +21,7 @@ function isDenoProject()
 end
 
 -- checks if the current folder is part of an eslint project
-function isEslintProject()
+function is_eslint_project()
   -- look for root folder, therefor look for .git folder
   local root_folder = vim.fs.dirname(vim.fs.find({ ".git" }, { upward = true })[1])
   -- look in root folder for eslint config files
@@ -41,7 +41,7 @@ function isEslintProject()
 end
 
 -- checks if the current folder is part of an ts project
-function isTsProject()
+function is_ts_project()
   -- look for root folder, therefor look for .git folder
   local root_folder = vim.fs.dirname(vim.fs.find({ ".git" }, { upward = true })[1])
   -- look in root folder for tsconfig.json
