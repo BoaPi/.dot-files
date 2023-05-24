@@ -17,7 +17,7 @@ vim.opt.smartindent = true
 
 -- line options
 vim.opt.wrap = false -- prevent line wrapping
-vim.opt.colorcolumn = "80" -- highlight column 80 for not to long lines
+vim.opt.colorcolumn = "80,120,150" -- highlight column 80, 120 & 150 for not to long lines
 vim.opt.signcolumn = "yes"
 
 -- window options
