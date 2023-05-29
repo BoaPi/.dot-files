@@ -28,7 +28,7 @@ mason_lspconfig.setup({
     "html",
     "jsonls",
     "lua_ls",
-    "ocaml-lsp",
+    "ocamllsp",
     "ols",
     "rust_analyzer",
     "stylelint_lsp",
