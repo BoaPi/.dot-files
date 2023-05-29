@@ -28,9 +28,12 @@ mason_lspconfig.setup({
     "html",
     "jsonls",
     "lua_ls",
+    "ocaml-lsp",
+    "ols",
     "rust_analyzer",
     "stylelint_lsp",
     "tsserver",
+    "zls",
   },
   -- auto-install configured servers (with lspconfig)
   automatic_installation = true, -- not the same as ensure_installed
