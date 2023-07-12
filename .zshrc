@@ -56,6 +56,11 @@ alias auditHigh="npm audit | grep -E \"(High)\" -B3 -A10"
 alias auditCritialAndHigh="npm audit | grep -E \"(High | Critical)\" -B3 -A10"
 alias gitCleanUp="dev && git branch | grep \"fix/.*\|feat/.*\|feature/.*\|refactor/.*\|docu/.*\|delivery.*\|release.*\|rb-sync.*\|rb-update.*\|rb-upstream.*\" | xargs git branch --delete"
 
+# add fuzzy find for folders
+f() {
+  cd $(fd -t d . $HOME/Documents | fzf)
+}
+
 # place this after nvm initialization!
 autoload -U add-zsh-hook
 load-nvmrc() {
