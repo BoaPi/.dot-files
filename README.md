@@ -29,6 +29,8 @@ this commands are only examples and needs to be adjusted, if the directory struc
 | nvm        | manager for different node version        |                                                                                                                                                             |
 | raycast    | alternative for spotlight                 |                                                                                                                                                             |
 | ripgrep    | rust written grep alternative             |                                                                                                                                                             |
+| fzf        | fuzzy finder                              |                                                                                                                                                             |
+| fd         | rust written find alternative             |                                                                                                                                                             |
 
 ## extensions to look into
 
