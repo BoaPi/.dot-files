@@ -22,7 +22,7 @@ local capabilities =
 -- will enable listed key mappings only when an lsp is attached
 -- to the buffer
 local on_attach = function(_, bufnr)
-  -- NOTE: plugins like rust-tools, mason, Lspsaga & null-ls
+  -- NOTE: plugins like rust-tools, mason & null-ls
   -- will bring custom functions with them. In here we can attach them
   -- to the buffers which needs them, e.g.
   -- rust-tool mappings only for the rust-lsp

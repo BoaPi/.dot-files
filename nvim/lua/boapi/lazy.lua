@@ -58,10 +58,6 @@ local plugins = {
   -- configuring lsp servers
   "neovim/nvim-lspconfig", -- easily configure language servers
   "hrsh7th/cmp-nvim-lsp", -- for autocompletion
-  {
-    "glepnir/lspsaga.nvim",
-    branch = "main",
-  }, -- enhanced lsp uisualisation
   "folke/neodev.nvim", -- lsp for nvim lua API
   -- TODO: use 'simrat39/rust-tools.nvim' -- more complete rust tooling
   -- https://sharksforarms.dev/posts/neovim-rust/
