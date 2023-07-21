@@ -48,6 +48,9 @@ local plugins = {
   "williamboman/mason-lspconfig.nvim", -- bridges gap b/w mason & lspconfig
   "jayp0521/mason-null-ls.nvim", -- enables managing of linter & formatters in mason
 
+  -- formatting & linting
+    "jose-elias-alvarez/null-ls.nvim", -- configure formatters & linters
+
   -- snippets
   "L3MON4D3/LuaSnip",
   "saadparwaiz1/cmp_luasnip",
