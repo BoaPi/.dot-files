@@ -25,6 +25,7 @@ mason_lspconfig.setup({
     "cssls",
     "denols",
     "eslint",
+    "gopls",
     "html",
     "jsonls",
     "lua_ls",
