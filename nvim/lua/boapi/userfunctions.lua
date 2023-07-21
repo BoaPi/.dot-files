@@ -1,14 +1,6 @@
 -- custom command
 local auto_functions = require("boapi.autofunctions")
 
--- RunRust
--- runs rust code in the given buffer
-vim.api.nvim_create_user_command("RunRust", function()
-  vim.api.nvim_cmd({ cmd = "vnew" }, {})
-  local bufnr = vim.api.nvim_get_current_buf()
-  auto_functions.run_main(tonumber(bufnr))
-end, {})
-
 -- SwitchTab
 -- function to switch between vim tabs quickly
 -- get user input
