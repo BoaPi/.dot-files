@@ -1,6 +1,3 @@
--- custom command
-local auto_functions = require("boapi.autofunctions")
-
 -- SwitchTab
 -- function to switch between vim tabs quickly
 -- get user input
