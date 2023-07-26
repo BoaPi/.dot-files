@@ -43,6 +43,7 @@ this commands are only examples and needs to be adjusted, if the directory struc
 
 ## Next Steps
 
-* [setup](https://www.youtube.com/watch?v=J9yqSdvAKXY)
+* look into extensions
+* hook up linter
+* hook up formatter
 * [.dot-files](https://github.com/cpow/cpow-dotfiles)
-* [primeagen](https://github.com/ThePrimeagen/init.lua/tree/master)
