@@ -35,32 +35,46 @@ local plugins = {
     run = ":TSUpdate",
   },
   "nvim-treesitter/playground", -- playground for treesitter to see tokens
-  "sheerun/vim-polyglot", -- vim API
-  "folke/todo-comments.nvim", -- colorful TODO: comments
-  "b0o/schemastore.nvim", -- JSON schema
+  "sheerun/vim-polyglot",       -- vim API
+  "folke/todo-comments.nvim",   -- colorful TODO: comments
+  "b0o/schemastore.nvim",       -- JSON schema
 
   -- lsp setup & auto completions
   -- =========================================================== --
-  "hrsh7th/nvim-cmp", -- auto completion plugin
+  { 'VonHeikemen/lsp-zero.nvim', branch = 'dev-v3' },
 
-  -- managing & installing lsp servers, linters & formatters
-  "williamboman/mason.nvim", -- in charge of managing lsp servers, linters & formatters
-  "williamboman/mason-lspconfig.nvim", -- bridges gap b/w mason & lspconfig
+  'williamboman/mason.nvim',
+  'williamboman/mason-lspconfig.nvim',
   "jayp0521/mason-null-ls.nvim", -- enables managing of linter & formatters in mason
+  "jose-elias-alvarez/null-ls.nvim", -- configure formatters & linters
 
-  -- formatting & linting
-    "jose-elias-alvarez/null-ls.nvim", -- configure formatters & linters
+  -- LSP Support
+  {
+    'neovim/nvim-lspconfig',
+    dependencies = {
+      { 'hrsh7th/cmp-nvim-lsp' },
+    },
+  },
+  "folke/neodev.nvim",
 
-  -- snippets
-  "L3MON4D3/LuaSnip",
+  -- Autocompletion
+  {
+    'hrsh7th/nvim-cmp',
+    dependencies = {
+      { 'L3MON4D3/LuaSnip' },
+    }
+  },
+  "hrsh7th/cmp-nvim-lua",
+  "hrsh7th/cmp-buffer",
   "saadparwaiz1/cmp_luasnip",
-
-  -- configuring lsp servers
-  "neovim/nvim-lspconfig", -- easily configure language servers
-  "hrsh7th/cmp-nvim-lsp", -- for autocompletion
-  "folke/neodev.nvim", -- lsp for nvim lua API
-  -- TODO: use 'simrat39/rust-tools.nvim' -- more complete rust tooling
-  -- https://sharksforarms.dev/posts/neovim-rust/
+  {
+	"L3MON4D3/LuaSnip",
+	-- follow latest release.
+	version = "2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+	-- install jsregexp (optional!).
+	build = "make install_jsregexp",
+    dependencies = {"rafamadriz/friendly-snippets"}
+  },
 
   -- auto closing
   "windwp/nvim-autopairs", -- autoclose parens, brackets, quotes, etc...
@@ -80,9 +94,9 @@ local plugins = {
 
   -- git related
   -- =========================================================== --
-  "kdheepak/lazygit.nvim", -- lazy git implementation in nvim
+  "kdheepak/lazygit.nvim",   -- lazy git implementation in nvim
   "lewis6991/gitsigns.nvim", -- show line modifications on left hand side
-  "mbbill/undotree", -- show undo tree on the site
+  "mbbill/undotree",         -- show undo tree on the site
 
   -- visual things
   -- =========================================================== --
@@ -93,7 +107,7 @@ local plugins = {
   {
     "kyazdani42/nvim-web-devicons",
     opt = true,
-  }, -- icons
+  },                           -- icons
   "nvim-lualine/lualine.nvim", -- statusline
 }
 
