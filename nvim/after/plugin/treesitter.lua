@@ -13,7 +13,6 @@ configs.setup({
     "css",
     "dockerfile",
     "gitignore",
-    "go",
     "html",
     "http",
     "javascript",
