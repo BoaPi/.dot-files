@@ -5,14 +5,20 @@ if not neodev_status then
 end
 neodev.setup({})
 
-local lsp_status, lsp = pcall(require, "lsp-zero")
+local lsp_status, lsp_init = pcall(require, "lsp-zero")
 if not lsp_status then
   return
 end
-lsp.preset({})
+local lsp = lsp_init.preset({})
+local cmp_action = lsp.cmp_action()
 
 local mason_status, mason = pcall(require, "mason")
 if not mason_status then
+  return
+end
+
+local lspconfig_status, lspconfig = pcall(require, "lspconfig")
+if not lspconfig_status then
   return
 end
 
@@ -28,43 +34,44 @@ end
 
 local cmp_status, cmp = pcall(require, "cmp")
 if not cmp_status then
-  return  
+  return
 end
 
-local cmp_action = lsp.cmp_action()
+local stylua_status, stylua = pcall(require, "stylua")
+if not stylua_status then
+  return
+end
 
 -- setup
 lsp.on_attach(function(_, bufnr)
   lsp.default_keymaps({ buffer = bufnr })
 end)
-
--- setup auto-complete
 lsp.extend_cmp()
 
-require('luasnip.loaders.from_vscode').lazy_load()
+require("luasnip.loaders.from_vscode").lazy_load()
 
 cmp.setup({
   sources = {
-      { name = "buffer"},
-      { name = "nvim_lsp" },
-      { name = "nvim_lua"},
-      { name = "luasnip" },
-    },
-  mapping = {
-    ['<C-f>'] = cmp_action.luasnip_jump_forward(),
-    ['<C-b>'] = cmp_action.luasnip_jump_backward(),
+    { name = "buffer" },
+    { name = "nvim_lsp" },
+    { name = "nvim_lua" },
+    { name = "luasnip" },
   },
-  preselect = 'item',
+  mapping = {
+    ["<C-f>"] = cmp_action.luasnip_jump_forward(),
+    ["<C-b>"] = cmp_action.luasnip_jump_backward(),
+  },
+  preselect = "item",
   completion = {
-    completeopt = 'menu,menuone,noinsert'
+    completeopt = "menu,menuone,noinsert",
   },
 })
 
 lsp.set_sign_icons({
-  error = '✘',
-  warn = '▲',
-  hint = '⚑',
-  info = '»'
+  error = "✘",
+  warn = "▲",
+  hint = "⚑",
+  info = "»",
 })
 
 mason.setup({})
@@ -87,8 +94,13 @@ mason_lspconfig.setup({
   handlers = {
     lsp.default_setup,
     lua_ls = function()
-      -- (Optional) Configure lua language server for neovim
-      require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
+      lspconfig.lua_ls.setup(lsp.nvim_lua_ls({
+        on_attach = function()
+          vim.keymap.set("n", "<leader>f", function()
+            stylua.format()
+          end)
+        end,
+      }))
     end,
   },
 })
@@ -96,9 +108,9 @@ mason_lspconfig.setup({
 mason_null_ls.setup({
   -- list of formatters & linters for mason to install
   ensure_installed = {
-    "eslint_d",  -- for all projects using eslint
+    "eslint_d", -- for all projects using eslint
     "prettierd", -- for all project using not eslint
-    "stylua",    -- lua formatter
+    "stylua", -- lua formatter
     "stylelint", -- css linter
   },
   -- auto-install configured formatters & linters (with null-ls)
