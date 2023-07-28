@@ -88,6 +88,7 @@ mason_lspconfig.setup({
     "rust_analyzer",
     "stylelint_lsp",
     "svelte",
+    "tailwindcss",
     "tsserver",
   },
   automatic_installation = true,
