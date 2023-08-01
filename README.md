@@ -35,7 +35,6 @@ this commands are only examples and needs to be adjusted, if the directory struc
 ## extensions to look into
 
 * [bat](https://github.com/sharkdp/bat)
-* [lsd](https://github.com/lsd-rs/lsd)
 * [crates](https://github.com/Saecki/crates.nvim)
 * [oil.nvim](https://github.com/stevearc/oil.nvim)
 * [trouble.nvim](https://github.com/folke/trouble.nvim)
