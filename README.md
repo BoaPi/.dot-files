@@ -31,6 +31,7 @@ this commands are only examples and needs to be adjusted, if the directory struc
 | ripgrep    | rust written grep alternative             |                                                                                                                                                             |
 | fzf        | fuzzy finder                              |                                                                                                                                                             |
 | fd         | rust written find alternative             |                                                                                                                                                             |
+| lsd        | rust written ls alternative               |                                                                                                                                                             |
 
 ## extensions to look into
 
