@@ -103,6 +103,16 @@ mason_lspconfig.setup({
         end,
       }))
     end,
+        svelte = function()
+      lspconfig.svelte.setup({
+        on_attach = function()
+          vim.keymap.set("n", "<leader>f", function()
+            vim.lsp.buf.format()
+          end)
+        end,
+      })
+    end,
+
   },
 })
 
