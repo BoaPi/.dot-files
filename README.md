@@ -43,6 +43,7 @@ this commands are only examples and needs to be adjusted, if the directory struc
 ## Next Steps
 
 * look into extensions
+* do I need lsp-zero?
 * hook up linter
 * hook up formatter
 * [.dot-files](https://github.com/cpow/cpow-dotfiles)
