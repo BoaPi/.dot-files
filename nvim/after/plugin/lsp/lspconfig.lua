@@ -85,7 +85,7 @@ mason_lspconfig.setup({
     "html",
     "jsonls",
     "lua_ls",
-    "rust_analyzer",
+    "gopls",
     "stylelint_lsp",
     "svelte",
     "tailwindcss",
