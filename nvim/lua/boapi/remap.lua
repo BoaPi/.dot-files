@@ -61,6 +61,7 @@ nnoremap("<leader>hc", '<CMD>lua require("harpoon.mark").clear_all()<CR>') -- cl
 nnoremap("<C-s>", "<CMD>SwitchTab<CR>") -- call auto command in normal mode
 inoremap("<C-s>", "<CMD>SwitchTab<CR>") -- call auto command in insert mode
 vnoremap("<C-s>", "<CMD>SwitchTab<CR>") -- call auto command in visual mode
+nnoremap("<C-s>x", "<CMD>tabc<CR>") -- close tab
 
 -- =========================================================== --
 -- disable arrow keys normal, visual and operator-pending mode
