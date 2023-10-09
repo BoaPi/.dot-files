@@ -36,16 +36,12 @@ this commands are only examples and needs to be adjusted, if the directory struc
 ## extensions to look into
 
 * [bat](https://github.com/sharkdp/bat)
-* [crates](https://github.com/Saecki/crates.nvim)
 * [oil.nvim](https://github.com/stevearc/oil.nvim)
-* [trouble.nvim](https://github.com/folke/trouble.nvim)
 * [noice.nvim](https://github.com/folke/noice.nvim)
 * [conform.nvim](https://github.com/stevearc/conform.nvim)
 
 ## Next Steps
 
 * look into extensions
-* do I need lsp-zero?
 * hook up linter
 * hook up formatter
-* [.dot-files](https://github.com/cpow/cpow-dotfiles)
