@@ -33,8 +33,10 @@ this commands are only examples and needs to be adjusted, if the directory struc
 | fd         | rust written find alternative             |                                                                                                                                                             |
 | lsd        | rust written ls alternative               |                                                                                                                                                             |
 
-## extensions to look into
+## to-do
 
+* do I need LazyGit? maybe git-fugitive is the way to go?
+* try to figure out why nvim starts so slowly
 * [oil.nvim](https://github.com/stevearc/oil.nvim)
 * [noice.nvim](https://github.com/folke/noice.nvim)
 * [conform.nvim](https://github.com/stevearc/conform.nvim)
