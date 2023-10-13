@@ -113,14 +113,6 @@ local plugins = {
     opt = true,
   }, -- icons
   "nvim-lualine/lualine.nvim", -- statusline
-
-  -- mix
-  -- =========================================================== --
-  {
-    "m4xshen/hardtime.nvim",
-    dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
-    opts = {},
-  },
 }
 
 local opts = {}
