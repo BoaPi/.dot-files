@@ -100,7 +100,6 @@ local plugins = {
   "kdheepak/lazygit.nvim", -- lazy git implementation in nvim
   "lewis6991/gitsigns.nvim", -- show line modifications on left hand side
   "mbbill/undotree", -- show undo tree on the site
-  "sindrets/diffview.nvim", -- better diff view
 
   -- visual things
   -- =========================================================== --
