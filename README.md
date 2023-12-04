@@ -32,6 +32,7 @@ this commands are only examples and needs to be adjusted, if the directory struc
 | fzf        | fuzzy finder                              |                                                                                                                                                             |
 | fd         | rust written find alternative             |                                                                                                                                                             |
 | lsd        | rust written ls alternative               |                                                                                                                                                             |
+| bat        | rust written cat alternative              |                                                                                                                                                             |
 
 ## to-do
 
