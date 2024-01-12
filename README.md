@@ -10,7 +10,7 @@ this commands are only examples and needs to be adjusted, if the directory struc
 - add symlinks to `.zshrc` and `nvim`
   - ZSH - `ln -s ~/.dot-files/.zshrc`
   - NVIM - `ln -s ~/.dot-files/nvim` - in `~.config/`
-  - alacritty - `ln -s ~/.dot-files/alacritty/.alacritty.yml`
+  - alacritty - `ln -s ~/.dot-files/alacritty/.alacritty.toml`
   - tmux - `ln -s ~/.dot-files/tmux/.tmux.conf`
 
 ## dev setup
