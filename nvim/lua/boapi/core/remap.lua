@@ -1,7 +1,7 @@
-local nnoremap = require("boapi.keymap").nnoremap
-local inoremap = require("boapi.keymap").inoremap
-local vnoremap = require("boapi.keymap").vnoremap
-local noremap = require("boapi.keymap").noremap
+local nnoremap = require("boapi.core.keymap").nnoremap
+local inoremap = require("boapi.core.keymap").inoremap
+local vnoremap = require("boapi.core.keymap").vnoremap
+local noremap = require("boapi.core.keymap").noremap
 
 -- =========================================================== --
 -- general
