@@ -36,17 +36,16 @@ local plugins = {
   },
   "nvim-treesitter/playground", -- playground for treesitter to see tokens
   "sheerun/vim-polyglot", -- vim API
-  "folke/todo-comments.nvim", -- colorful TODO: comments
   "b0o/schemastore.nvim", -- JSON schema
 
-  -- lsp setup & auto completions
+  -- lsp setup, auto completions, formatting and linting
   -- =========================================================== --
   { "VonHeikemen/lsp-zero.nvim", branch = "dev-v3" },
 
   "williamboman/mason.nvim",
   "williamboman/mason-lspconfig.nvim",
-  "jayp0521/mason-null-ls.nvim", -- enables managing of linter & formatters in mason
-  "jose-elias-alvarez/null-ls.nvim", -- configure formatters & linters
+  "stevearc/conform.nvim",
+  "mfussenegger/nvim-lint",
 
   -- LSP Support
   {
