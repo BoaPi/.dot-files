@@ -12,6 +12,7 @@ export PATH="$PNPM_HOME:$PATH"
 export GOPATH=$HOME/go
 export GOROOT=/usr/local/go
 export GOBIN=$HOME/go/bin
+export GOPROXY=direct
 export PATH=$PATH:$GOPATH
 export PATH=$PATH:$GOBIN
 export PATH=$PATH:$GOROOT/bin
