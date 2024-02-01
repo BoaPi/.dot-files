@@ -1,2 +1,4 @@
-require("josean.core.keymap")
-require("josean.core.options")
+require("boapi.core.globals")
+require("boapi.core.set")
+require("boapi.core.remap")
+require("boapo.core.keymap")
