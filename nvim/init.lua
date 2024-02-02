@@ -1,1 +1,2 @@
-require("boapi")
+require("boapi.core")
+require("boapi.lazy")
