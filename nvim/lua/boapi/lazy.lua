@@ -28,7 +28,6 @@ vim.opt.rtp:prepend(lazypath)
 --    ft = "markdown",
 --    dependencies = "nvim-treesitter",
 --  },
---  "sheerun/vim-polyglot", -- vim API
 --  "b0o/schemastore.nvim", -- JSON schema
 --
 --
