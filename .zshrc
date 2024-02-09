@@ -28,7 +28,6 @@ plugins=(
   zsh-syntax-highlighting
   zsh-nvm
   npm
-  web-search
 )
 
 source $ZSH/oh-my-zsh.sh
