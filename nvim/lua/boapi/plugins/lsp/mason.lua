@@ -25,7 +25,6 @@ return {
         "html",
         "jsonls",
         "lua_ls",
-        "svelte",
         "tailwindcss",
         "tsserver",
       },
