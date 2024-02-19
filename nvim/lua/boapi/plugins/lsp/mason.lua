@@ -33,9 +33,9 @@ return {
 
     mason_tool_installer.setup({
       ensure_installed = {
+        "eslint_d",
         "prettierd",
         "stylua",
-        "eslint_d",
       },
     })
   end,
