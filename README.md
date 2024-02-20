@@ -37,6 +37,7 @@ this commands are only examples and needs to be adjusted, if the directory struc
 
 ## to-do
 
+* setup LSPs and code completion
 * do I need LazyGit? maybe git-fugitive is the way to go?
 * try to figure out why nvim starts so slowly
 * [oil.nvim](https://github.com/stevearc/oil.nvim)
