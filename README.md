@@ -41,4 +41,3 @@ this commands are only examples and needs to be adjusted, if the directory struc
 * try to figure out why nvim starts so slowly
 * [oil.nvim](https://github.com/stevearc/oil.nvim)
 * [noice.nvim](https://github.com/folke/noice.nvim)
-* [conform.nvim](https://github.com/stevearc/conform.nvim)
