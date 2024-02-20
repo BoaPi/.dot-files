@@ -40,4 +40,4 @@ this commands are only examples and needs to be adjusted, if the directory struc
 * do I need LazyGit? maybe git-fugitive is the way to go?
 * try to figure out why nvim starts so slowly
 * [oil.nvim](https://github.com/stevearc/oil.nvim)
-* [noice.nvim](https://github.com/folke/noice.nvim)
+* [yazi](https://github.com/sxyazi/yazi)
