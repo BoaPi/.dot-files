@@ -42,3 +42,5 @@ this commands are only examples and needs to be adjusted, if the directory struc
 * try to figure out why nvim starts so slowly
 * [oil.nvim](https://github.com/stevearc/oil.nvim)
 * [yazi](https://github.com/sxyazi/yazi)
+* [tmux sessionizer by ThePrimeagen](https://github.com/ThePrimeagen/.dotfiles/blob/master/tmux/.tmux.conf)
+* [tmux sessionizer as standalone tool](https://crates.io/crates/tmux-sessionizer)
