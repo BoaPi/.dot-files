@@ -15,19 +15,15 @@ require("lazy").setup({ { import = "boapi.plugins" }, { import = "boapi.plugins.
   install = {
     colorscheme = { "catppuccin" },
   },
+  change_detection = {
+    enabled = true,
+    notify = false,
+  },
 })
 
 vim.opt.rtp:prepend(lazypath)
 
 --local plugins = {
---
---  -- own plugins from github
---  {
---    "BoaPi/task-toggler.nvim",
---    config = true,
---    ft = "markdown",
---    dependencies = "nvim-treesitter",
---  },
 --  "b0o/schemastore.nvim", -- JSON schema
 --
 --
