@@ -34,6 +34,7 @@ this commands are only examples and needs to be adjusted, if the directory struc
 | lsd        | rust written ls alternative               |                                                                                                                                                             |
 | bat        | rust written cat alternative              |                                                                                                                                                             |
 | jq         | JSON query cli tool                       |                                                                                                                                                             |
+| bottom     | rust written top alternative              |                                                                                                                                                             |
 
 ## to-do
 
