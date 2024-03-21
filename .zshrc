@@ -51,7 +51,7 @@ alias gitCleanUp="dev && git branch | grep \"fix/.*\|feat/.*\|feature/.*\|refact
 
 # add fuzzy find for folders
 f() {
-  cd $(fd -t d . $HOME/Documents | fzf)
+  cd $(fd -H -t d . $HOME/Documents | fzf)
 }
 
 # place this after nvm initialization!
