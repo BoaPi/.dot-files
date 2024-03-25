@@ -12,7 +12,6 @@ return {
   },
   config = function()
     local cmp = require("cmp")
-    local luasnip = require("luasnip")
     local lspkind = require("lspkind")
 
     -- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
@@ -26,10 +25,6 @@ return {
         { name = "luasnip" },
         { name = "path" },
       },
-      --      mapping = {
-      --        ["<C-f>"] = cmp_action.luasnip_jump_forward(),
-      --       ["<C-b>"] = cmp_action.luasnip_jump_backward(),
-      --      },
       preselect = "item",
       completion = {
         completeopt = "menu,menuone,noinsert",
