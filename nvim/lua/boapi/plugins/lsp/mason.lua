@@ -26,6 +26,7 @@ return {
         "jsonls",
         "lua_ls",
         "tailwindcss",
+        "templ",
         "tsserver",
       },
       automatic_installation = true,
