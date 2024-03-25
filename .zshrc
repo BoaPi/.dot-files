@@ -8,6 +8,10 @@ export ZSH="$HOME/.oh-my-zsh"
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
+# Path for Go
+export GO_BIN="$HOME/go/bin"
+export PATH="$PATH:$GO_BIN"
+
 # editor
 export EDITOR='nvim'
 
