@@ -19,6 +19,7 @@ return {
       lsp.default_keymaps({ buffer = bufnr })
     end)
     lsp.extend_cmp()
+    lsp.capabilities = cmp_nvim_lsp.default_capabilities()
 
     lsp.set_sign_icons({
       error = "✘",
@@ -26,5 +27,14 @@ return {
       hint = "⚑",
       info = "»",
     })
+
+    -- lua LSP
+    lspconfig.lua_ls.setup({})
+
+    -- Go LSP
+    lspconfig.gopls.setup({})
+
+    -- Templ LSP
+    lspconfig.templ.setup({})
   end,
 }
