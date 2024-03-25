@@ -29,23 +29,20 @@ nnoremap("n", "nzz") -- move line down by one
 -- =========================================================== --
 -- telescope quick actions
 -- =========================================================== --
-nnoremap("<leader>ff", "<CMD>Telescope find_files<CR>")
-nnoremap("<leader>gf", "<CMD>Telescope git_files<CR>")
-nnoremap("<leader>gc", "<CMD>Telescope git_commits<CR>")
-nnoremap("<leader>ts", "<CMD>Telescope treesitter<CR>")
-nnoremap("<leader>gs", "<CMD>Telescope grep_string<CR>")
-nnoremap("<leader>lg", "<CMD>Telescope live_grep<CR>")
-nnoremap("<leader>tt", "<CMD>TodoTelescope<CR>")
+nnoremap("<leader>tf", "<CMD>Telescope find_files<CR>")
+nnoremap("<leader>ts", "<CMD>Telescope grep_string<CR>")
+nnoremap("<leader>tg", "<CMD>Telescope live_grep<CR>")
+nnoremap("<leader>tb", "<CMD>Telescope buffers<CR>")
 
 -- =========================================================== --
 -- Git quick actions
 -- =========================================================== --
-nnoremap("<leader>gg", "<CMD>LazyGit<CR>") -- open LazyGit
+nnoremap("<leader>lg", "<CMD>LazyGit<CR>") -- open LazyGit
 
 -- =========================================================== --
 -- Undo-tree quick actions
 -- =========================================================== --
-nnoremap("<leader>t", "<CMD>UndotreeShow<CR><CMD>UndotreeFocus<CR>") -- open undo-tree panel
+nnoremap("<leader>ut", "<CMD>UndotreeShow<CR><CMD>UndotreeFocus<CR>") -- open undo-tree panel
 
 -- =========================================================== --
 -- Harpoon quick actions
