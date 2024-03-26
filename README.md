@@ -35,6 +35,7 @@ this commands are only examples and needs to be adjusted, if the directory struc
 | bat        | rust written cat alternative              |                                                                                                                                                             |
 | jq         | JSON query cli tool                       |                                                                                                                                                             |
 | bottom     | rust written top alternative              |                                                                                                                                                             |
+| entr       | universal task runner                     |                                                                                                                                                             |
 
 ## to-do
 
