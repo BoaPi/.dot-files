@@ -17,6 +17,8 @@ return {
     -- setup
     lsp.on_attach(function(_, bufnr)
       lsp.default_keymaps({ buffer = bufnr })
+
+      vim.keymap.set('n', '<leader>ca', '<CMD>vim.lsp.buf.code_action()<CR>', {buffer = bufnr})
     end)
     lsp.extend_cmp()
     lsp.capabilities = cmp_nvim_lsp.default_capabilities()
