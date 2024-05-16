@@ -1,5 +1,7 @@
 theme "catppuccin-mocha"
 
+default_layout "simple"
+
 keybinds {
     normal {
         // uncomment this and adjust key if using copy_on_select=false
