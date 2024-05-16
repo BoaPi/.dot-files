@@ -12,6 +12,7 @@ this commands are only examples and needs to be adjusted, if the directory struc
   - NVIM - `ln -s ~/.dot-files/nvim` - in `~.config/`
   - alacritty - `ln -s ~/.dot-files/alacritty/.alacritty.toml`
   - tmux - `ln -s ~/.dot-files/tmux/.tmux.conf`
+  - zellij - `ln -s ~/.dot-files/zellij`
 
 ## dev setup
 
