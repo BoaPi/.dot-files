@@ -6,7 +6,7 @@ local noremap = require("boapi.core.keymap").noremap
 -- =========================================================== --
 -- general
 -- =========================================================== --
-nnoremap("<leader>jk", "<CMD>Ex<CR>") -- quick access for netrw
+nnoremap("<leader>jk", "<CMD>Oil<CR>") -- quick access for oil, as replacement for netrw
 nnoremap("<leader>nh", "<CMD>noh<CR>") -- remove highlighting from last search
 
 -- =========================================================== --
@@ -43,6 +43,11 @@ nnoremap("<leader>lg", "<CMD>LazyGit<CR>") -- open LazyGit
 -- Undo-tree quick actions
 -- =========================================================== --
 nnoremap("<leader>ut", "<CMD>UndotreeShow<CR><CMD>UndotreeFocus<CR>") -- open undo-tree panel
+
+-- =========================================================== --
+-- Oil quick actions
+-- =========================================================== --
+noremap("-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -- =========================================================== --
 -- Harpoon quick actions
