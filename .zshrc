@@ -24,9 +24,12 @@ plugins=(
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
+  zsh-completions
   zsh-nvm
   npm
 )
+
+fpath+="${ZSH_CUSTOM:-"$ZSH/custom"}/plugins/zsh-completions/src"
 
 source $ZSH/oh-my-zsh.sh
 
