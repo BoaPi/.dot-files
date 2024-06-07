@@ -50,7 +50,7 @@ return {
 
     -- HTML LSP
     lspconfig.html.setup({})
-    
+
     -- CSS LSP
     lspconfig.cssls.setup({})
 
@@ -70,7 +70,10 @@ return {
       completion = {
         completeopt = "menu,menuone,noinsert",
       },
-      -- configure lspkind for vs-code like pictograms in completion menu
+      window = {
+        completion = { border = "rounded", scrollbar = false },
+        documentation = { border = "rounded", scrollbar = false },
+      },      -- configure lspkind for vs-code like pictograms in completion menu
       formatting = {
         format = lspkind.cmp_format({
           maxwidth = 50,
