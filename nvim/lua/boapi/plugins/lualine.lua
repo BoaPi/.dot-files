@@ -6,8 +6,8 @@ return {
 
     lualine.setup({
       options = {
-        component_separators = { left = "", right = "|" }, -- separator symbols
-        section_separators = { left = "", right = "" }, -- separator symbols between sections
+        component_separators = { left = "", right = "|" }, -- separator symbols
+        section_separators = { left = "", right = "" }, -- separator symbols between sections
       },
       -- used sections in top line / tabline
       tabline = {
