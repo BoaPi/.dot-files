@@ -40,9 +40,8 @@ this commands are only examples and needs to be adjusted, if the directory struc
 
 ## to-do
 
-- setup LSPs and code completion
-- do I need LazyGit? maybe git-fugitive is the way to go?
-- try to figure out why nvim starts so slowly
-- [yazi](https://github.com/sxyazi/yazi)
-- [tmux sessionizer by ThePrimeagen](https://github.com/ThePrimeagen/.dotfiles/blob/master/tmux/.tmux.conf)
-- [tmux sessionizer as standalone tool](https://crates.io/crates/tmux-sessionizer)
+- [ ] treesitter -> add selection of nodes forward and backward
+- [ ] setup LSPs and code completion
+- [ ] do I need LazyGit? maybe git-fugitive is the way to go?
+- [ ] try to figure out why nvim starts so slowly
+- [ ] [yazi](https://github.com/sxyazi/yazi)
