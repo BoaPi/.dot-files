@@ -54,6 +54,9 @@ return {
     -- CSS LSP
     lspconfig.cssls.setup({})
 
+    --- Cobol LSP
+    lspconfig.cobol_ls.setup({})
+
     -- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
     require("luasnip.loaders.from_vscode").lazy_load()
 
@@ -73,7 +76,7 @@ return {
       window = {
         completion = { border = "rounded", scrollbar = false },
         documentation = { border = "rounded", scrollbar = false },
-      },      -- configure lspkind for vs-code like pictograms in completion menu
+      }, -- configure lspkind for vs-code like pictograms in completion menu
       formatting = {
         format = lspkind.cmp_format({
           maxwidth = 50,
