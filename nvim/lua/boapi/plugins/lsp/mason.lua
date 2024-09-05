@@ -18,6 +18,7 @@ return {
       -- with the ones you want to install
       ensure_installed = {
         "cssls",
+        "cobol_ls",
         "denols",
         "emmet_ls",
         "eslint",
