@@ -12,8 +12,10 @@ export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
 # Path for Go
-export GO_BIN="$HOME/go/bin"
-export PATH="$PATH:$GO_BIN"
+export GO111MODULE=on
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
 
 # editor
 export EDITOR='nvim'
