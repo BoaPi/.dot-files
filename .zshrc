@@ -17,6 +17,10 @@ export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 
+# Path for Postgres
+export PSQL_BIN=/usr/local/Cellar/postgresql@15/15.10/bin
+export PATH=$PATH:$PSQL_BIN
+
 # editor
 export EDITOR='nvim'
 
