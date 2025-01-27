@@ -18,7 +18,7 @@ export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 
 # Path for Postgres
-export PSQL_BIN=/usr/local/Cellar/postgresql@15/15.10/bin
+export PSQL_BIN=/opt/homebrew/opt/postgresql@15/bin
 export PATH=$PATH:$PSQL_BIN
 
 # editor
