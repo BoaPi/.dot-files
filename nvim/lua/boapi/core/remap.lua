@@ -48,6 +48,7 @@ nnoremap("<leader>ut", "<CMD>UndotreeShow<CR><CMD>UndotreeFocus<CR>") -- open un
 -- Oil quick actions
 -- =========================================================== --
 noremap("-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+nnoremap("gd", "<CMD>Telescope lsp_definitions<CR>", { desc = "Show or go to references" })
 
 -- =========================================================== --
 -- Harpoon quick actions
