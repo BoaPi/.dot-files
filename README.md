@@ -10,9 +10,6 @@ this commands are only examples and needs to be adjusted, if the directory struc
 - add symlinks to `.zshrc` and `nvim`
   - ZSH - `ln -s ~/.dot-files/.zshrc`
   - NVIM - `ln -s ~/.dot-files/nvim` - in `~.config/`
-  - alacritty - `ln -s ~/.dot-files/alacritty/.alacritty.toml`
-  - tmux - `ln -s ~/.dot-files/tmux/.tmux.conf`
-  - zellij - `ln -s ~/.dot-files/zellij`
 
 ## dev setup
 
@@ -20,9 +17,8 @@ this commands are only examples and needs to be adjusted, if the directory struc
 | ---------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | catppuccin | overall theme for vim, alacritty and tmux |                                                                                                                                                                                |
 | neovim     | used editor                               |                                                                                                                                                                                |
-| alacritty  | used terminal                             |                                                                                                                                                                                |
+| ghostty    | used terminal                             |                                                                                                                                                                                |
 | starship   | used prompt for the shell                 |                                                                                                                                                                                |
-| tmux       | used terminal multiplexer                 |                                                                                                                                                                                |
 | tmp        | tmux package manager                      |                                                                                                                                                                                |
 | NerdFont   | used as font in alacritty & tmux          | [NerdFonts](https://www.nerdfonts.com/cheat-sheet) can be installed via `brew`                                                                                                 |
 | LazyGit    | used git cmd tool                         |                                                                                                                                                                                |
