@@ -18,9 +18,6 @@ export PATH=$PATH:$GOBIN
 export PSQL_BIN=/opt/homebrew/opt/postgresql@15/bin
 export PATH=$PATH:$PSQL_BIN
 
-# editor
-export EDITOR='nvimdiff'
-
 # plug-ins
 plugins=(
   z
