@@ -35,6 +35,7 @@ this commands are only examples and needs to be adjusted, if the directory struc
 
 ## to-do
 
+- [ ] setup claude code for development (backend/nvim/frontend)
 - [ ] treesitter -> add selection of nodes forward and backward
 - [ ] setup LSPs and code completion
 - [ ] do I need LazyGit? maybe git-fugitive is the way to go?
