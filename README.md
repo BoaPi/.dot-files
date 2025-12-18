@@ -35,9 +35,9 @@ this commands are only examples and needs to be adjusted, if the directory struc
 
 ## to-do
 
-- [ ] fresh and clean neovim setup
-- [ ] lazy.nvim
-- [ ] [yazi](https://github.com/sxyazi/yazi)
+- [x] fresh and clean neovim setup
+- [x] lazy.nvim
+- [x] [yazi](https://github.com/sxyazi/yazi)
 - [ ] telescope.nvim
 - [ ] oil.nvim
 - [ ] tree-sitter
