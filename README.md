@@ -38,8 +38,8 @@ this commands are only examples and needs to be adjusted, if the directory struc
 - [x] fresh and clean neovim setup
 - [x] lazy.nvim
 - [x] [yazi](https://github.com/sxyazi/yazi)
+- [x] tree-sitter
+- [ ] setup treesitter
 - [ ] telescope.nvim
-- [ ] oil.nvim
-- [ ] tree-sitter
 - [ ] setup LSPs and code completion
 - [ ] do I need LazyGit? maybe git-fugitive is the way to go?
