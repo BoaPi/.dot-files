@@ -35,9 +35,11 @@ this commands are only examples and needs to be adjusted, if the directory struc
 
 ## to-do
 
-- [ ] setup claude code for development (backend/nvim/frontend)
-- [ ] treesitter -> add selection of nodes forward and backward
+- [ ] fresh and clean neovim setup
+- [ ] lazy.nvim
+- [ ] [yazi](https://github.com/sxyazi/yazi)
+- [ ] telescope.nvim
+- [ ] oil.nvim
+- [ ] tree-sitter
 - [ ] setup LSPs and code completion
 - [ ] do I need LazyGit? maybe git-fugitive is the way to go?
-- [ ] try to figure out why nvim starts so slowly
-- [ ] [yazi](https://github.com/sxyazi/yazi)
