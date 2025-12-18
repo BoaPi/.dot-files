@@ -56,5 +56,14 @@ f() {
   cd $(fd -H -t d . $HOME/Documents | fzf)
 }
 
+# add yazi quick usage
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
+
 eval "$(fnm env --use-on-cd --version-file-strategy=recursive)"
 eval "$(starship init zsh)"
