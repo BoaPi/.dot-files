@@ -1,16 +1,17 @@
 return {
     'nvim-treesitter/nvim-treesitter',
+    branch = 'main',
 
     config = function()
-        local treesitter = require("nvim-treesitter")
+        local treesitter = require("nvim-treesitter");
         
-	treesitter.setup({
+    	treesitter.setup({
             lazy = false,
             build = ':TSUpdate',
-	    highlight = {enable = true}
-        })
+	    highlight = {enable = true},
+        });
 	
-	treesitter.install({
+	    treesitter.install({
 	        "bash",
           "css",		
           "dockerfile",
@@ -38,6 +39,6 @@ return {
           	"yaml",
 		"vim",
 		"vimdoc",
-	})
+	    });
     end
 }
