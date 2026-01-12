@@ -20,7 +20,6 @@ return {
           "http",
           "javascript",
           "json",
-          "jsonc",
           "lua",
           "make",
           "markdown",
