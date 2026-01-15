@@ -32,6 +32,7 @@ this commands are only examples and needs to be adjusted, if the directory struc
 | bat        | rust written cat alternative              |                                                                                                                                                                                |
 | jq         | JSON query cli tool                       |                                                                                                                                                                                |
 | entr       | universal task runner                     |                                                                                                                                                                                |
+| yazi       | terminal file manager                     |                                                                                                                                                                                |
 
 ## to-do
 
@@ -39,7 +40,7 @@ this commands are only examples and needs to be adjusted, if the directory struc
 - [x] lazy.nvim
 - [x] [yazi](https://github.com/sxyazi/yazi)
 - [x] tree-sitter
-- [ ] setup treesitter
+- [x] setup treesitter
 - [ ] telescope.nvim
 - [ ] setup LSPs and code completion
 - [ ] do I need LazyGit? maybe git-fugitive is the way to go?
