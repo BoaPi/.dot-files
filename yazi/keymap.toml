@@ -1,0 +1,5 @@
+[mgr]
+prepend_keymap = [
+	{ on = "K", run = "seek -1", desc = "Seek up 1 units in the preview" },
+	{ on = "J", run = "seek 1",  desc = "Seek down 1 units in the preview" },
+]
