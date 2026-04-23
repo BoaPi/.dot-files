@@ -41,6 +41,8 @@ this commands are only examples and needs to be adjusted, if the directory struc
 - [x] [yazi](https://github.com/sxyazi/yazi)
 - [x] tree-sitter
 - [x] setup treesitter
+- [ ] setup autocommand for diagnostics open
+- [ ] setup open float after certain amount of milliseconds as "hover"
+- [ ] setup lua completion, vim API completion, gloabls etc.
 - [ ] telescope.nvim
 - [ ] setup LSPs and code completion
-- [ ] do I need LazyGit? maybe git-fugitive is the way to go?
