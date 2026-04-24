@@ -46,3 +46,4 @@ this commands are only examples and needs to be adjusted, if the directory struc
 - [ ] setup lua completion, vim API completion, gloabls etc.
 - [ ] telescope.nvim
 - [ ] setup LSPs and code completion
+- [ ] setup oxide
