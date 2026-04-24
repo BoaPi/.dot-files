@@ -47,3 +47,4 @@ this commands are only examples and needs to be adjusted, if the directory struc
 - [ ] setup LSPs and code completion
 - [ ] setup oxide
 - [ ] setup ui2
+- [ ] investigate custom status line https://jacobnscott.com/posts/nvim-statusline/
