@@ -36,14 +36,14 @@ this commands are only examples and needs to be adjusted, if the directory struc
 
 ## to-do
 
-- [x] fresh and clean neovim setup
-- [x] lazy.nvim
-- [x] [yazi](https://github.com/sxyazi/yazi)
 - [x] tree-sitter
 - [x] setup treesitter
 - [ ] setup autocommand for diagnostics open
 - [ ] setup open float after certain amount of milliseconds as "hover"
+- [ ] adjust floating window design to be more prominent
+- [ ] investigate lsp, completion for lua development and vim api in completions
 - [ ] setup lua completion, vim API completion, gloabls etc.
 - [ ] telescope.nvim
 - [ ] setup LSPs and code completion
 - [ ] setup oxide
+- [ ] setup ui2
