@@ -18,3 +18,7 @@ require("plugin.conform")
 -- setup of commands
 require("config.autocmd")
 require("config.lsp")
+
+-- setup LLM setup
+require("llm")
+require("llm.keymap")
