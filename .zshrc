@@ -16,6 +16,9 @@ export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 
+# Path for cargo installed packages
+export PATH=$PATH:$HOME/.cargo/bin
+
 # Path for Postgres
 export PSQL_BIN=/opt/homebrew/opt/postgresql@15/bin
 export PATH=$PATH:$PSQL_BIN
