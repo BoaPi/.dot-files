@@ -1,3 +1,3 @@
-rerturn({
+return({
   complete = require("llm.prompt").complete,
 })
