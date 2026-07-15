@@ -32,6 +32,7 @@ this commands are only examples and needs to be adjusted, if the directory struc
 | jq         | JSON query cli tool                       |                                                                                                                                                                                |
 | entr       | universal task runner                     |                                                                                                                                                                                |
 | yazi       | terminal file manager                     |                                                                                                                                                                                |
+| hunk       | review tool for human and LLM             |                                                                                                                                                                                |
 
 ## to-do
 
