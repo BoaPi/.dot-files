@@ -14,10 +14,11 @@ require("plugin.oil")
 require("plugin.gitsigns")
 require("plugin.mason")
 require("plugin.conform")
+require("plugin.lsp")
+require("plugin.blink")
 
 -- setup of commands
 require("config.autocmd")
-require("config.lsp")
 
 -- setup LLM setup
 require("llm")
