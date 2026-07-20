@@ -1,8 +1,9 @@
 [mgr]
 ratio = [0, 1, 4]
+show_hidden = true
 
 [opener]
 edit = [
 	{ run = "${EDITOR:-vi} %s", desc = "NeoVim", for = "unix", block = true },
-	{ run = 'code-insiders -w "$@"', desc = "VSCode", for = "unix", block = false },
+	{ run = 'code-insiders "$@"', desc = "VSCode", for = "unix", block = false },
 ]
