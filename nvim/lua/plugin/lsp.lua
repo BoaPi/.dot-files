@@ -7,6 +7,11 @@ vim.lsp.config("cssls", {
 })
 vim.lsp.enable("cssls")
 
+vim.lsp.config("eslint", {
+  settings = {
+    experimental = { useFlatConfig = true },
+  },
+})
 vim.lsp.enable("eslint")
 vim.lsp.enable("gopls")
 
